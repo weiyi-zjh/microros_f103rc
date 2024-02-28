@@ -1,0 +1,35 @@
+running egg_info
+creating ../../build/microros_to_pc_py/microros_to_pc_py.egg-info
+writing ../../build/microros_to_pc_py/microros_to_pc_py.egg-info/PKG-INFO
+writing dependency_links to ../../build/microros_to_pc_py/microros_to_pc_py.egg-info/dependency_links.txt
+writing entry points to ../../build/microros_to_pc_py/microros_to_pc_py.egg-info/entry_points.txt
+writing requirements to ../../build/microros_to_pc_py/microros_to_pc_py.egg-info/requires.txt
+writing top-level names to ../../build/microros_to_pc_py/microros_to_pc_py.egg-info/top_level.txt
+writing manifest file '../../build/microros_to_pc_py/microros_to_pc_py.egg-info/SOURCES.txt'
+reading manifest file '../../build/microros_to_pc_py/microros_to_pc_py.egg-info/SOURCES.txt'
+writing manifest file '../../build/microros_to_pc_py/microros_to_pc_py.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/orangepi/microros2pc_test/build/microros_to_pc_py/build
+creating /home/orangepi/microros2pc_test/build/microros_to_pc_py/build/lib
+creating /home/orangepi/microros2pc_test/build/microros_to_pc_py/build/lib/microros_to_pc_py
+copying microros_to_pc_py/__init__.py -> /home/orangepi/microros2pc_test/build/microros_to_pc_py/build/lib/microros_to_pc_py
+copying microros_to_pc_py/microros_to_pc_sub.py -> /home/orangepi/microros2pc_test/build/microros_to_pc_py/build/lib/microros_to_pc_py
+running install
+running install_lib
+creating /home/orangepi/microros2pc_test/install/microros_to_pc_py/lib/python3.8/site-packages/microros_to_pc_py
+copying /home/orangepi/microros2pc_test/build/microros_to_pc_py/build/lib/microros_to_pc_py/__init__.py -> /home/orangepi/microros2pc_test/install/microros_to_pc_py/lib/python3.8/site-packages/microros_to_pc_py
+copying /home/orangepi/microros2pc_test/build/microros_to_pc_py/build/lib/microros_to_pc_py/microros_to_pc_sub.py -> /home/orangepi/microros2pc_test/install/microros_to_pc_py/lib/python3.8/site-packages/microros_to_pc_py
+byte-compiling /home/orangepi/microros2pc_test/install/microros_to_pc_py/lib/python3.8/site-packages/microros_to_pc_py/__init__.py to __init__.cpython-38.pyc
+byte-compiling /home/orangepi/microros2pc_test/install/microros_to_pc_py/lib/python3.8/site-packages/microros_to_pc_py/microros_to_pc_sub.py to microros_to_pc_sub.cpython-38.pyc
+running install_data
+creating /home/orangepi/microros2pc_test/install/microros_to_pc_py/share/ament_index
+creating /home/orangepi/microros2pc_test/install/microros_to_pc_py/share/ament_index/resource_index
+creating /home/orangepi/microros2pc_test/install/microros_to_pc_py/share/ament_index/resource_index/packages
+copying resource/microros_to_pc_py -> /home/orangepi/microros2pc_test/install/microros_to_pc_py/share/ament_index/resource_index/packages
+copying package.xml -> /home/orangepi/microros2pc_test/install/microros_to_pc_py/share/microros_to_pc_py
+running install_egg_info
+Copying ../../build/microros_to_pc_py/microros_to_pc_py.egg-info to /home/orangepi/microros2pc_test/install/microros_to_pc_py/lib/python3.8/site-packages/microros_to_pc_py-0.0.0-py3.8.egg-info
+running install_scripts
+Installing microros_sub script to /home/orangepi/microros2pc_test/install/microros_to_pc_py/lib/microros_to_pc_py
+writing list of installed files to '/home/orangepi/microros2pc_test/build/microros_to_pc_py/install.log'

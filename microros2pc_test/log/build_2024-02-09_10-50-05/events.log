@@ -1,0 +1,166 @@
+[0.000000] (-) TimerEvent: {}
+[0.000429] (microros2pc_test_cpp) JobQueued: {'identifier': 'microros2pc_test_cpp', 'dependencies': OrderedDict()}
+[0.000574] (microros2pc_test_cpp) JobStarted: {'identifier': 'microros2pc_test_cpp'}
+[0.099856] (-) TimerEvent: {}
+[0.148433] (microros2pc_test_cpp) JobProgress: {'identifier': 'microros2pc_test_cpp', 'progress': 'cmake'}
+[0.149086] (microros2pc_test_cpp) Command: {'cmd': ['/usr/bin/cmake', '/home/orangepi/microros2pc_test/src/microros2pc_test_cpp', '-DCMAKE_INSTALL_PREFIX=/home/orangepi/microros2pc_test/install/microros2pc_test_cpp'], 'cwd': '/home/orangepi/microros2pc_test/build/microros2pc_test_cpp', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('UMS_MOUNTPOINT', '/mnt/ums'), ('GST_V4L2_PREFERRED_FOURCC', 'NV12:YU12:NV16:YUY2'), ('LANGUAGE', 'en_US.UTF-8'), ('USER', 'orangepi'), ('SSH_CLIENT', '192.168.1.101 53876 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('USB_FUNCS', 'adb'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/orangepi'), ('OLDPWD', '/home/orangepi'), ('SSH_TTY', '/dev/pts/5'), ('GST_INSPECT_NO_COLORS', '1'), ('GST_MPP_NO_RGA', '1'), ('ROS_PYTHON_VERSION', '3'), ('COGL_DRIVER', 'gles2'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('GST_V4L2SRC_MAX_RESOLUTION', '3840x2160'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'orangepi'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm'), ('GST_GL_API', 'gles2'), ('XDG_SESSION_ID', '25'), ('GST_VIDEO_CONVERT_PREFERRED_FORMAT', 'NV12:NV16:I420:YUY2'), ('GST_V4L2SRC_RK_DEVICES', '_mainpath:_selfpath:_bypass:_scale'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GST_GL_PLATFORM', 'egl'), ('GST_DEBUG_NO_COLOR', '1'), ('GST_V4L2SRC_DEFAULT_DEVICE', '/dev/video-camera0'), ('DISPLAY', 'localhost:15.0'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GST_V4L2_USE_LIBV4L2', '1'), ('UMS_SIZE', '256M'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('LC_MESSAGES', 'en_US.UTF-8'), ('SHELL', '/bin/bash'), ('UMS_RO', '0'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('UMS_FSTYPE', 'vfat'), ('PWD', '/home/orangepi/microros2pc_test/build/microros2pc_test_cpp'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.1.101 53876 192.168.1.100 22'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('UMS_MOUNT', '0'), ('COLCON', '1'), ('UMS_FILE', '/userdata/ums_shared.img'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[0.200183] (-) TimerEvent: {}
+[0.301390] (-) TimerEvent: {}
+[0.402104] (-) TimerEvent: {}
+[0.502697] (-) TimerEvent: {}
+[0.546134] (microros2pc_test_cpp) StdoutLine: {'line': b'-- The C compiler identification is GNU 9.4.0\n'}
+[0.603000] (-) TimerEvent: {}
+[0.704073] (-) TimerEvent: {}
+[0.804972] (-) TimerEvent: {}
+[0.806296] (microros2pc_test_cpp) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 9.4.0\n'}
+[0.828127] (microros2pc_test_cpp) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc\n'}
+[0.905215] (-) TimerEvent: {}
+[1.005962] (-) TimerEvent: {}
+[1.096973] (microros2pc_test_cpp) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc -- works\n'}
+[1.102000] (microros2pc_test_cpp) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[1.106063] (-) TimerEvent: {}
+[1.206796] (-) TimerEvent: {}
+[1.307688] (-) TimerEvent: {}
+[1.324294] (microros2pc_test_cpp) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[1.340691] (microros2pc_test_cpp) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[1.341641] (microros2pc_test_cpp) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[1.347484] (microros2pc_test_cpp) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++\n'}
+[1.407777] (-) TimerEvent: {}
+[1.508416] (-) TimerEvent: {}
+[1.604778] (microros2pc_test_cpp) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ -- works\n'}
+[1.605081] (microros2pc_test_cpp) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[1.608455] (-) TimerEvent: {}
+[1.709006] (-) TimerEvent: {}
+[1.809869] (-) TimerEvent: {}
+[1.904916] (microros2pc_test_cpp) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[1.909940] (-) TimerEvent: {}
+[1.921676] (microros2pc_test_cpp) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[1.922334] (microros2pc_test_cpp) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[1.935852] (microros2pc_test_cpp) StdoutLine: {'line': b'-- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)\n'}
+[2.002296] (microros2pc_test_cpp) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") \n'}
+[2.002704] (microros2pc_test_cpp) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[2.010146] (-) TimerEvent: {}
+[2.110616] (-) TimerEvent: {}
+[2.210963] (-) TimerEvent: {}
+[2.311607] (-) TimerEvent: {}
+[2.361253] (microros2pc_test_cpp) StdoutLine: {'line': b'-- Found rclcpp: 2.4.3 (/opt/ros/foxy/share/rclcpp/cmake)\n'}
+[2.411762] (-) TimerEvent: {}
+[2.469536] (microros2pc_test_cpp) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[2.488558] (microros2pc_test_cpp) StdoutLine: {'line': b'-- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)\n'}
+[2.511931] (-) TimerEvent: {}
+[2.612453] (-) TimerEvent: {}
+[2.713132] (-) TimerEvent: {}
+[2.788358] (microros2pc_test_cpp) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "1.1.1f")  \n'}
+[2.813501] (-) TimerEvent: {}
+[2.868910] (microros2pc_test_cpp) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/foxy/include  \n'}
+[2.913594] (-) TimerEvent: {}
+[3.014136] (-) TimerEvent: {}
+[3.032413] (microros2pc_test_cpp) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[3.114334] (-) TimerEvent: {}
+[3.147680] (microros2pc_test_cpp) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)\n'}
+[3.151761] (microros2pc_test_cpp) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[3.154823] (microros2pc_test_cpp) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[3.214460] (-) TimerEvent: {}
+[3.314928] (-) TimerEvent: {}
+[3.407180] (microros2pc_test_cpp) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[3.407558] (microros2pc_test_cpp) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[3.414998] (-) TimerEvent: {}
+[3.515332] (-) TimerEvent: {}
+[3.615743] (-) TimerEvent: {}
+[3.626976] (microros2pc_test_cpp) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed\n'}
+[3.627716] (microros2pc_test_cpp) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads\n'}
+[3.715874] (-) TimerEvent: {}
+[3.816315] (-) TimerEvent: {}
+[3.841936] (microros2pc_test_cpp) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads - not found\n'}
+[3.842587] (microros2pc_test_cpp) StdoutLine: {'line': b'-- Looking for pthread_create in pthread\n'}
+[3.916573] (-) TimerEvent: {}
+[4.017244] (-) TimerEvent: {}
+[4.073913] (microros2pc_test_cpp) StdoutLine: {'line': b'-- Looking for pthread_create in pthread - found\n'}
+[4.078208] (microros2pc_test_cpp) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[4.117462] (-) TimerEvent: {}
+[4.218207] (-) TimerEvent: {}
+[4.318621] (-) TimerEvent: {}
+[4.383813] (microros2pc_test_cpp) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.9.8 (/opt/ros/foxy/share/ament_lint_auto/cmake)\n'}
+[4.418857] (-) TimerEvent: {}
+[4.519594] (-) TimerEvent: {}
+[4.528378] (microros2pc_test_cpp) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[4.529862] (microros2pc_test_cpp) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[4.530512] (microros2pc_test_cpp) StdoutLine: {'line': b'-- Configured cppcheck include dirs: \n'}
+[4.530909] (microros2pc_test_cpp) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[4.531619] (microros2pc_test_cpp) StdoutLine: {'line': b"-- Added test 'cpplint' to check C / C++ code against the Google style\n"}
+[4.532035] (microros2pc_test_cpp) StdoutLine: {'line': b'-- Configured cpplint exclude dirs and/or files: \n'}
+[4.533268] (microros2pc_test_cpp) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[4.535046] (microros2pc_test_cpp) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[4.535478] (microros2pc_test_cpp) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[4.536031] (microros2pc_test_cpp) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[4.542196] (microros2pc_test_cpp) StdoutLine: {'line': b'-- Configuring done\n'}
+[4.551354] (microros2pc_test_cpp) StdoutLine: {'line': b'-- Generating done\n'}
+[4.553473] (microros2pc_test_cpp) StdoutLine: {'line': b'-- Build files have been written to: /home/orangepi/microros2pc_test/build/microros2pc_test_cpp\n'}
+[4.569709] (microros2pc_test_cpp) CommandEnded: {'returncode': 0}
+[4.575719] (microros2pc_test_cpp) JobProgress: {'identifier': 'microros2pc_test_cpp', 'progress': 'build'}
+[4.576171] (microros2pc_test_cpp) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/orangepi/microros2pc_test/build/microros2pc_test_cpp', '--', '-j8', '-l8'], 'cwd': '/home/orangepi/microros2pc_test/build/microros2pc_test_cpp', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('UMS_MOUNTPOINT', '/mnt/ums'), ('GST_V4L2_PREFERRED_FOURCC', 'NV12:YU12:NV16:YUY2'), ('LANGUAGE', 'en_US.UTF-8'), ('USER', 'orangepi'), ('SSH_CLIENT', '192.168.1.101 53876 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('USB_FUNCS', 'adb'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/orangepi'), ('OLDPWD', '/home/orangepi'), ('SSH_TTY', '/dev/pts/5'), ('GST_INSPECT_NO_COLORS', '1'), ('GST_MPP_NO_RGA', '1'), ('ROS_PYTHON_VERSION', '3'), ('COGL_DRIVER', 'gles2'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('GST_V4L2SRC_MAX_RESOLUTION', '3840x2160'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'orangepi'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm'), ('GST_GL_API', 'gles2'), ('XDG_SESSION_ID', '25'), ('GST_VIDEO_CONVERT_PREFERRED_FORMAT', 'NV12:NV16:I420:YUY2'), ('GST_V4L2SRC_RK_DEVICES', '_mainpath:_selfpath:_bypass:_scale'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GST_GL_PLATFORM', 'egl'), ('GST_DEBUG_NO_COLOR', '1'), ('GST_V4L2SRC_DEFAULT_DEVICE', '/dev/video-camera0'), ('DISPLAY', 'localhost:15.0'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GST_V4L2_USE_LIBV4L2', '1'), ('UMS_SIZE', '256M'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('LC_MESSAGES', 'en_US.UTF-8'), ('SHELL', '/bin/bash'), ('UMS_RO', '0'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('UMS_FSTYPE', 'vfat'), ('PWD', '/home/orangepi/microros2pc_test/build/microros2pc_test_cpp'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.1.101 53876 192.168.1.100 22'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('UMS_MOUNT', '0'), ('COLCON', '1'), ('UMS_FILE', '/userdata/ums_shared.img'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[4.619810] (-) TimerEvent: {}
+[4.711490] (microros2pc_test_cpp) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target microros2pc_test\x1b[0m\n'}
+[4.720021] (-) TimerEvent: {}
+[4.810464] (microros2pc_test_cpp) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/microros2pc_test.dir/src/microros2pc_test.cpp.o\x1b[0m\n'}
+[4.820264] (-) TimerEvent: {}
+[4.921111] (-) TimerEvent: {}
+[5.022008] (-) TimerEvent: {}
+[5.122890] (-) TimerEvent: {}
+[5.223782] (-) TimerEvent: {}
+[5.324712] (-) TimerEvent: {}
+[5.425482] (-) TimerEvent: {}
+[5.526296] (-) TimerEvent: {}
+[5.627171] (-) TimerEvent: {}
+[5.727951] (-) TimerEvent: {}
+[5.828710] (-) TimerEvent: {}
+[5.929539] (-) TimerEvent: {}
+[6.030470] (-) TimerEvent: {}
+[6.131386] (-) TimerEvent: {}
+[6.232301] (-) TimerEvent: {}
+[6.333164] (-) TimerEvent: {}
+[6.434016] (-) TimerEvent: {}
+[6.534925] (-) TimerEvent: {}
+[6.635815] (-) TimerEvent: {}
+[6.736667] (-) TimerEvent: {}
+[6.837525] (-) TimerEvent: {}
+[6.938304] (-) TimerEvent: {}
+[7.039213] (-) TimerEvent: {}
+[7.140102] (-) TimerEvent: {}
+[7.240838] (-) TimerEvent: {}
+[7.329167] (microros2pc_test_cpp) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable microros2pc_test\x1b[0m\n'}
+[7.341091] (-) TimerEvent: {}
+[7.441777] (-) TimerEvent: {}
+[7.542221] (-) TimerEvent: {}
+[7.609450] (microros2pc_test_cpp) StdoutLine: {'line': b'[100%] Built target microros2pc_test\n'}
+[7.642448] (-) TimerEvent: {}
+[7.659559] (microros2pc_test_cpp) CommandEnded: {'returncode': 0}
+[7.736396] (microros2pc_test_cpp) JobProgress: {'identifier': 'microros2pc_test_cpp', 'progress': 'install'}
+[7.742659] (-) TimerEvent: {}
+[7.771305] (microros2pc_test_cpp) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/orangepi/microros2pc_test/build/microros2pc_test_cpp'], 'cwd': '/home/orangepi/microros2pc_test/build/microros2pc_test_cpp', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('UMS_MOUNTPOINT', '/mnt/ums'), ('GST_V4L2_PREFERRED_FOURCC', 'NV12:YU12:NV16:YUY2'), ('LANGUAGE', 'en_US.UTF-8'), ('USER', 'orangepi'), ('SSH_CLIENT', '192.168.1.101 53876 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('USB_FUNCS', 'adb'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/orangepi'), ('OLDPWD', '/home/orangepi'), ('SSH_TTY', '/dev/pts/5'), ('GST_INSPECT_NO_COLORS', '1'), ('GST_MPP_NO_RGA', '1'), ('ROS_PYTHON_VERSION', '3'), ('COGL_DRIVER', 'gles2'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('GST_V4L2SRC_MAX_RESOLUTION', '3840x2160'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'orangepi'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm'), ('GST_GL_API', 'gles2'), ('XDG_SESSION_ID', '25'), ('GST_VIDEO_CONVERT_PREFERRED_FORMAT', 'NV12:NV16:I420:YUY2'), ('GST_V4L2SRC_RK_DEVICES', '_mainpath:_selfpath:_bypass:_scale'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GST_GL_PLATFORM', 'egl'), ('GST_DEBUG_NO_COLOR', '1'), ('GST_V4L2SRC_DEFAULT_DEVICE', '/dev/video-camera0'), ('DISPLAY', 'localhost:15.0'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GST_V4L2_USE_LIBV4L2', '1'), ('UMS_SIZE', '256M'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('LC_MESSAGES', 'en_US.UTF-8'), ('SHELL', '/bin/bash'), ('UMS_RO', '0'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('UMS_FSTYPE', 'vfat'), ('PWD', '/home/orangepi/microros2pc_test/build/microros2pc_test_cpp'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.1.101 53876 192.168.1.100 22'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('UMS_MOUNT', '0'), ('COLCON', '1'), ('UMS_FILE', '/userdata/ums_shared.img'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[7.795740] (microros2pc_test_cpp) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[7.796499] (microros2pc_test_cpp) StdoutLine: {'line': b'-- Installing: /home/orangepi/microros2pc_test/install/microros2pc_test_cpp/share/ament_index/resource_index/package_run_dependencies/microros2pc_test_cpp\n'}
+[7.797292] (microros2pc_test_cpp) StdoutLine: {'line': b'-- Installing: /home/orangepi/microros2pc_test/install/microros2pc_test_cpp/share/ament_index/resource_index/parent_prefix_path/microros2pc_test_cpp\n'}
+[7.797765] (microros2pc_test_cpp) StdoutLine: {'line': b'-- Installing: /home/orangepi/microros2pc_test/install/microros2pc_test_cpp/share/microros2pc_test_cpp/environment/ament_prefix_path.sh\n'}
+[7.798254] (microros2pc_test_cpp) StdoutLine: {'line': b'-- Installing: /home/orangepi/microros2pc_test/install/microros2pc_test_cpp/share/microros2pc_test_cpp/environment/ament_prefix_path.dsv\n'}
+[7.798685] (microros2pc_test_cpp) StdoutLine: {'line': b'-- Installing: /home/orangepi/microros2pc_test/install/microros2pc_test_cpp/share/microros2pc_test_cpp/environment/path.sh\n'}
+[7.801514] (microros2pc_test_cpp) StdoutLine: {'line': b'-- Installing: /home/orangepi/microros2pc_test/install/microros2pc_test_cpp/share/microros2pc_test_cpp/environment/path.dsv\n'}
+[7.802160] (microros2pc_test_cpp) StdoutLine: {'line': b'-- Installing: /home/orangepi/microros2pc_test/install/microros2pc_test_cpp/share/microros2pc_test_cpp/local_setup.bash\n'}
+[7.802603] (microros2pc_test_cpp) StdoutLine: {'line': b'-- Installing: /home/orangepi/microros2pc_test/install/microros2pc_test_cpp/share/microros2pc_test_cpp/local_setup.sh\n'}
+[7.803001] (microros2pc_test_cpp) StdoutLine: {'line': b'-- Installing: /home/orangepi/microros2pc_test/install/microros2pc_test_cpp/share/microros2pc_test_cpp/local_setup.zsh\n'}
+[7.803391] (microros2pc_test_cpp) StdoutLine: {'line': b'-- Installing: /home/orangepi/microros2pc_test/install/microros2pc_test_cpp/share/microros2pc_test_cpp/local_setup.dsv\n'}
+[7.803846] (microros2pc_test_cpp) StdoutLine: {'line': b'-- Installing: /home/orangepi/microros2pc_test/install/microros2pc_test_cpp/share/microros2pc_test_cpp/package.dsv\n'}
+[7.818162] (microros2pc_test_cpp) StdoutLine: {'line': b'-- Installing: /home/orangepi/microros2pc_test/install/microros2pc_test_cpp/share/ament_index/resource_index/packages/microros2pc_test_cpp\n'}
+[7.818684] (microros2pc_test_cpp) StdoutLine: {'line': b'-- Installing: /home/orangepi/microros2pc_test/install/microros2pc_test_cpp/share/microros2pc_test_cpp/cmake/microros2pc_test_cppConfig.cmake\n'}
+[7.819110] (microros2pc_test_cpp) StdoutLine: {'line': b'-- Installing: /home/orangepi/microros2pc_test/install/microros2pc_test_cpp/share/microros2pc_test_cpp/cmake/microros2pc_test_cppConfig-version.cmake\n'}
+[7.819510] (microros2pc_test_cpp) StdoutLine: {'line': b'-- Installing: /home/orangepi/microros2pc_test/install/microros2pc_test_cpp/share/microros2pc_test_cpp/package.xml\n'}
+[7.819909] (microros2pc_test_cpp) StdoutLine: {'line': b'-- Installing: /home/orangepi/microros2pc_test/install/microros2pc_test_cpp/lib/microros2pc_test_cpp/microros2pc_test\n'}
+[7.820296] (microros2pc_test_cpp) StdoutLine: {'line': b'-- Set runtime path of "/home/orangepi/microros2pc_test/install/microros2pc_test_cpp/lib/microros2pc_test_cpp/microros2pc_test" to ""\n'}
+[7.826290] (microros2pc_test_cpp) CommandEnded: {'returncode': 0}
+[7.843013] (-) TimerEvent: {}
+[7.943844] (-) TimerEvent: {}
+[8.046789] (-) TimerEvent: {}
+[8.147657] (-) TimerEvent: {}
+[8.248555] (-) TimerEvent: {}
+[8.294901] (microros2pc_test_cpp) JobEnded: {'identifier': 'microros2pc_test_cpp', 'rc': 0}
+[8.296620] (-) EventReactorShutdown: {}

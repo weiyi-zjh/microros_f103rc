@@ -1,0 +1,300 @@
+[0.000000] (-) TimerEvent: {}
+[0.000410] (micro_ros_setup) JobQueued: {'identifier': 'micro_ros_setup', 'dependencies': OrderedDict()}
+[0.000460] (micro_ros_setup) JobStarted: {'identifier': 'micro_ros_setup'}
+[0.099128] (-) TimerEvent: {}
+[0.187963] (micro_ros_setup) JobProgress: {'identifier': 'micro_ros_setup', 'progress': 'cmake'}
+[0.189010] (micro_ros_setup) Command: {'cmd': ['/usr/bin/cmake', '/home/orangepi/microros_agent_ws/src/micro_ros_setup', '-DCMAKE_INSTALL_PREFIX=/home/orangepi/microros_agent_ws/install/micro_ros_setup'], 'cwd': '/home/orangepi/microros_agent_ws/build/micro_ros_setup', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('UMS_MOUNTPOINT', '/mnt/ums'), ('GST_V4L2_PREFERRED_FOURCC', 'NV12:YU12:NV16:YUY2'), ('LANGUAGE', 'en_US.UTF-8'), ('USER', 'orangepi'), ('SSH_CLIENT', '192.168.137.1 51742 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('USB_FUNCS', 'adb'), ('LD_LIBRARY_PATH', '/home/orangepi/microros_ws/install/micro_ros_agent/lib:/home/orangepi/microros_ws/install/micro_ros_msgs/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/orangepi'), ('OLDPWD', '/home/orangepi/microros_agent_ws/src'), ('SSH_TTY', '/dev/pts/1'), ('GST_INSPECT_NO_COLORS', '1'), ('GST_MPP_NO_RGA', '1'), ('ROS_PYTHON_VERSION', '3'), ('COGL_DRIVER', 'gles2'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/home/orangepi/microros_ws/install'), ('GST_V4L2SRC_MAX_RESOLUTION', '3840x2160'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'orangepi'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm'), ('GST_GL_API', 'gles2'), ('XDG_SESSION_ID', '12'), ('GST_VIDEO_CONVERT_PREFERRED_FORMAT', 'NV12:NV16:I420:YUY2'), ('GST_V4L2SRC_RK_DEVICES', '_mainpath:_selfpath:_bypass:_scale'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GST_GL_PLATFORM', 'egl'), ('GST_DEBUG_NO_COLOR', '1'), ('GST_V4L2SRC_DEFAULT_DEVICE', '/dev/video-camera0'), ('DISPLAY', 'localhost:11.0'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GST_V4L2_USE_LIBV4L2', '1'), ('UMS_SIZE', '256M'), ('AMENT_PREFIX_PATH', '/home/orangepi/microros_ws/install/micro_ros_agent:/home/orangepi/microros_ws/install/micro_ros_msgs:/opt/ros/foxy'), ('LC_MESSAGES', 'en_US.UTF-8'), ('SHELL', '/bin/bash'), ('UMS_RO', '0'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('UMS_FSTYPE', 'vfat'), ('PWD', '/home/orangepi/microros_agent_ws/build/micro_ros_setup'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.137.1 51742 192.168.137.4 22'), ('PYTHONPATH', '/home/orangepi/microros_ws/install/micro_ros_msgs/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('UMS_MOUNT', '0'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/orangepi/microros_ws/install/micro_ros_agent:/home/orangepi/microros_ws/install/micro_ros_msgs:/opt/ros/foxy'), ('UMS_FILE', '/userdata/ums_shared.img')]), 'shell': False}
+[0.199308] (-) TimerEvent: {}
+[0.299967] (-) TimerEvent: {}
+[0.400699] (-) TimerEvent: {}
+[0.501417] (-) TimerEvent: {}
+[0.601766] (-) TimerEvent: {}
+[0.702043] (-) TimerEvent: {}
+[0.802435] (-) TimerEvent: {}
+[0.903109] (-) TimerEvent: {}
+[1.003622] (-) TimerEvent: {}
+[1.104265] (-) TimerEvent: {}
+[1.205219] (-) TimerEvent: {}
+[1.305817] (-) TimerEvent: {}
+[1.406358] (-) TimerEvent: {}
+[1.506925] (-) TimerEvent: {}
+[1.607625] (-) TimerEvent: {}
+[1.708572] (-) TimerEvent: {}
+[1.809153] (-) TimerEvent: {}
+[1.909777] (-) TimerEvent: {}
+[2.010507] (-) TimerEvent: {}
+[2.111055] (-) TimerEvent: {}
+[2.211512] (-) TimerEvent: {}
+[2.311937] (-) TimerEvent: {}
+[2.412355] (-) TimerEvent: {}
+[2.512785] (-) TimerEvent: {}
+[2.613181] (-) TimerEvent: {}
+[2.713552] (-) TimerEvent: {}
+[2.814000] (-) TimerEvent: {}
+[2.914556] (-) TimerEvent: {}
+[3.015504] (-) TimerEvent: {}
+[3.116427] (-) TimerEvent: {}
+[3.217231] (-) TimerEvent: {}
+[3.317957] (-) TimerEvent: {}
+[3.418770] (-) TimerEvent: {}
+[3.519665] (-) TimerEvent: {}
+[3.558442] (micro_ros_setup) StdoutLine: {'line': b'-- The C compiler identification is GNU 9.4.0\n'}
+[3.619846] (-) TimerEvent: {}
+[3.720557] (-) TimerEvent: {}
+[3.821298] (-) TimerEvent: {}
+[3.922257] (-) TimerEvent: {}
+[4.023076] (-) TimerEvent: {}
+[4.088173] (micro_ros_setup) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 9.4.0\n'}
+[4.115671] (micro_ros_setup) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc\n'}
+[4.123244] (-) TimerEvent: {}
+[4.224050] (-) TimerEvent: {}
+[4.324856] (-) TimerEvent: {}
+[4.378344] (micro_ros_setup) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc -- works\n'}
+[4.425098] (-) TimerEvent: {}
+[4.492001] (micro_ros_setup) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[4.525290] (-) TimerEvent: {}
+[4.626089] (-) TimerEvent: {}
+[4.726902] (-) TimerEvent: {}
+[4.781802] (micro_ros_setup) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[4.820640] (micro_ros_setup) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[4.827043] (-) TimerEvent: {}
+[4.859623] (micro_ros_setup) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[4.927214] (-) TimerEvent: {}
+[5.027769] (-) TimerEvent: {}
+[5.128584] (-) TimerEvent: {}
+[5.229278] (-) TimerEvent: {}
+[5.330075] (-) TimerEvent: {}
+[5.430931] (-) TimerEvent: {}
+[5.531764] (-) TimerEvent: {}
+[5.632512] (-) TimerEvent: {}
+[5.733023] (-) TimerEvent: {}
+[5.799556] (micro_ros_setup) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++\n'}
+[5.833311] (-) TimerEvent: {}
+[5.934051] (-) TimerEvent: {}
+[6.035038] (-) TimerEvent: {}
+[6.076447] (micro_ros_setup) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ -- works\n'}
+[6.083472] (micro_ros_setup) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[6.135366] (-) TimerEvent: {}
+[6.236668] (-) TimerEvent: {}
+[6.337577] (-) TimerEvent: {}
+[6.349548] (micro_ros_setup) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[6.409697] (micro_ros_setup) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[6.413894] (micro_ros_setup) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[6.425962] (micro_ros_setup) StdoutLine: {'line': b'-- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)\n'}
+[6.437622] (-) TimerEvent: {}
+[6.500040] (micro_ros_setup) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") \n'}
+[6.500797] (micro_ros_setup) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[6.537872] (-) TimerEvent: {}
+[6.638679] (-) TimerEvent: {}
+[6.739478] (-) TimerEvent: {}
+[6.840398] (-) TimerEvent: {}
+[6.878691] (micro_ros_setup) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.9.8 (/opt/ros/foxy/share/ament_lint_auto/cmake)\n'}
+[6.940627] (-) TimerEvent: {}
+[7.041419] (-) TimerEvent: {}
+[7.072158] (micro_ros_setup) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[7.115710] (micro_ros_setup) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[7.119377] (micro_ros_setup) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[7.121733] (micro_ros_setup) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the style conventions in PEP 257\n"}
+[7.133645] (micro_ros_setup) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[7.137358] (micro_ros_setup) StdoutLine: {'line': b'-- Configuring done\n'}
+[7.139686] (micro_ros_setup) StdoutLine: {'line': b'-- Generating done\n'}
+[7.140812] (micro_ros_setup) StdoutLine: {'line': b'-- Build files have been written to: /home/orangepi/microros_agent_ws/build/micro_ros_setup\n'}
+[7.141507] (-) TimerEvent: {}
+[7.147359] (micro_ros_setup) CommandEnded: {'returncode': 0}
+[7.157595] (micro_ros_setup) JobProgress: {'identifier': 'micro_ros_setup', 'progress': 'build'}
+[7.157989] (micro_ros_setup) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/orangepi/microros_agent_ws/build/micro_ros_setup', '--', '-j8', '-l8'], 'cwd': '/home/orangepi/microros_agent_ws/build/micro_ros_setup', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('UMS_MOUNTPOINT', '/mnt/ums'), ('GST_V4L2_PREFERRED_FOURCC', 'NV12:YU12:NV16:YUY2'), ('LANGUAGE', 'en_US.UTF-8'), ('USER', 'orangepi'), ('SSH_CLIENT', '192.168.137.1 51742 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('USB_FUNCS', 'adb'), ('LD_LIBRARY_PATH', '/home/orangepi/microros_ws/install/micro_ros_agent/lib:/home/orangepi/microros_ws/install/micro_ros_msgs/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/orangepi'), ('OLDPWD', '/home/orangepi/microros_agent_ws/src'), ('SSH_TTY', '/dev/pts/1'), ('GST_INSPECT_NO_COLORS', '1'), ('GST_MPP_NO_RGA', '1'), ('ROS_PYTHON_VERSION', '3'), ('COGL_DRIVER', 'gles2'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/home/orangepi/microros_ws/install'), ('GST_V4L2SRC_MAX_RESOLUTION', '3840x2160'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'orangepi'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm'), ('GST_GL_API', 'gles2'), ('XDG_SESSION_ID', '12'), ('GST_VIDEO_CONVERT_PREFERRED_FORMAT', 'NV12:NV16:I420:YUY2'), ('GST_V4L2SRC_RK_DEVICES', '_mainpath:_selfpath:_bypass:_scale'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GST_GL_PLATFORM', 'egl'), ('GST_DEBUG_NO_COLOR', '1'), ('GST_V4L2SRC_DEFAULT_DEVICE', '/dev/video-camera0'), ('DISPLAY', 'localhost:11.0'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GST_V4L2_USE_LIBV4L2', '1'), ('UMS_SIZE', '256M'), ('AMENT_PREFIX_PATH', '/home/orangepi/microros_ws/install/micro_ros_agent:/home/orangepi/microros_ws/install/micro_ros_msgs:/opt/ros/foxy'), ('LC_MESSAGES', 'en_US.UTF-8'), ('SHELL', '/bin/bash'), ('UMS_RO', '0'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('UMS_FSTYPE', 'vfat'), ('PWD', '/home/orangepi/microros_agent_ws/build/micro_ros_setup'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.137.1 51742 192.168.137.4 22'), ('PYTHONPATH', '/home/orangepi/microros_ws/install/micro_ros_msgs/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('UMS_MOUNT', '0'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/orangepi/microros_ws/install/micro_ros_agent:/home/orangepi/microros_ws/install/micro_ros_msgs:/opt/ros/foxy'), ('UMS_FILE', '/userdata/ums_shared.img')]), 'shell': False}
+[7.241759] (-) TimerEvent: {}
+[7.306240] (micro_ros_setup) CommandEnded: {'returncode': 0}
+[7.342025] (-) TimerEvent: {}
+[7.382609] (micro_ros_setup) JobProgress: {'identifier': 'micro_ros_setup', 'progress': 'install'}
+[7.432850] (micro_ros_setup) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/orangepi/microros_agent_ws/build/micro_ros_setup'], 'cwd': '/home/orangepi/microros_agent_ws/build/micro_ros_setup', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('UMS_MOUNTPOINT', '/mnt/ums'), ('GST_V4L2_PREFERRED_FOURCC', 'NV12:YU12:NV16:YUY2'), ('LANGUAGE', 'en_US.UTF-8'), ('USER', 'orangepi'), ('SSH_CLIENT', '192.168.137.1 51742 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('USB_FUNCS', 'adb'), ('LD_LIBRARY_PATH', '/home/orangepi/microros_ws/install/micro_ros_agent/lib:/home/orangepi/microros_ws/install/micro_ros_msgs/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/orangepi'), ('OLDPWD', '/home/orangepi/microros_agent_ws/src'), ('SSH_TTY', '/dev/pts/1'), ('GST_INSPECT_NO_COLORS', '1'), ('GST_MPP_NO_RGA', '1'), ('ROS_PYTHON_VERSION', '3'), ('COGL_DRIVER', 'gles2'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/home/orangepi/microros_ws/install'), ('GST_V4L2SRC_MAX_RESOLUTION', '3840x2160'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'orangepi'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm'), ('GST_GL_API', 'gles2'), ('XDG_SESSION_ID', '12'), ('GST_VIDEO_CONVERT_PREFERRED_FORMAT', 'NV12:NV16:I420:YUY2'), ('GST_V4L2SRC_RK_DEVICES', '_mainpath:_selfpath:_bypass:_scale'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GST_GL_PLATFORM', 'egl'), ('GST_DEBUG_NO_COLOR', '1'), ('GST_V4L2SRC_DEFAULT_DEVICE', '/dev/video-camera0'), ('DISPLAY', 'localhost:11.0'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GST_V4L2_USE_LIBV4L2', '1'), ('UMS_SIZE', '256M'), ('AMENT_PREFIX_PATH', '/home/orangepi/microros_ws/install/micro_ros_agent:/home/orangepi/microros_ws/install/micro_ros_msgs:/opt/ros/foxy'), ('LC_MESSAGES', 'en_US.UTF-8'), ('SHELL', '/bin/bash'), ('UMS_RO', '0'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('UMS_FSTYPE', 'vfat'), ('PWD', '/home/orangepi/microros_agent_ws/build/micro_ros_setup'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.137.1 51742 192.168.137.4 22'), ('PYTHONPATH', '/home/orangepi/microros_ws/install/micro_ros_msgs/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('UMS_MOUNT', '0'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/orangepi/microros_ws/install/micro_ros_agent:/home/orangepi/microros_ws/install/micro_ros_msgs:/opt/ros/foxy'), ('UMS_FILE', '/userdata/ums_shared.img')]), 'shell': False}
+[7.442135] (-) TimerEvent: {}
+[7.470416] (micro_ros_setup) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[7.471740] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_setup/share/ament_index/resource_index/package_run_dependencies/micro_ros_setup\n'}
+[7.473347] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_setup/share/ament_index/resource_index/parent_prefix_path/micro_ros_setup\n'}
+[7.474644] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_setup/share/micro_ros_setup/environment/ament_prefix_path.sh\n'}
+[7.475575] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_setup/share/micro_ros_setup/environment/ament_prefix_path.dsv\n'}
+[7.476379] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_setup/share/micro_ros_setup/environment/path.sh\n'}
+[7.477099] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_setup/share/micro_ros_setup/environment/path.dsv\n'}
+[7.477725] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_setup/share/micro_ros_setup/local_setup.bash\n'}
+[7.478532] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_setup/share/micro_ros_setup/local_setup.sh\n'}
+[7.479376] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_setup/share/micro_ros_setup/local_setup.zsh\n'}
+[7.480160] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_setup/share/micro_ros_setup/local_setup.dsv\n'}
+[7.480956] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_setup/share/micro_ros_setup/package.dsv\n'}
+[7.481917] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_setup/share/ament_index/resource_index/packages/micro_ros_setup\n'}
+[7.482780] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_setup/share/micro_ros_setup/cmake/micro_ros_setupConfig.cmake\n'}
+[7.483665] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_setup/share/micro_ros_setup/cmake/micro_ros_setupConfig-version.cmake\n'}
+[7.484474] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_setup/share/micro_ros_setup/package.xml\n'}
+[7.485399] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_setup/./config\n'}
+[7.486416] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_setup/./config/raspbian\n'}
+[7.487346] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_setup/./config/raspbian/generic\n'}
+[7.489594] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_setup/./config/raspbian/generic/client-colcon.meta\n'}
+[7.490736] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_setup/./config/raspbian/generic/create.sh\n'}
+[7.492102] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_setup/./config/raspbian/generic/client_uros_packages.repos\n'}
+[7.493174] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_setup/./config/raspbian/generic/flash.sh\n'}
+[7.494043] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_setup/./config/raspbian/generic/configure.sh\n'}
+[7.494984] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_setup/./config/raspbian/generic/supported_platforms\n'}
+[7.495556] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_setup/./config/raspbian/generic/build.sh\n'}
+[7.495914] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_setup/./config/raspbian/dev_ros2_packages.txt\n'}
+[7.496272] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_setup/./config/raspbian/dev_uros_packages.repos\n'}
+[7.496629] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_setup/./config/agent_uros_packages.repos\n'}
+[7.496985] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_setup/./config/renesas_ra\n'}
+[7.497577] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_setup/./config/renesas_ra/dev_ros2_packages.txt\n'}
+[7.498536] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_setup/./config/renesas_ra/list_apps.sh\n'}
+[7.499758] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_setup/./config/renesas_ra/ra6m5\n'}
+[7.501413] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_setup/./config/renesas_ra/ra6m5/client-colcon.meta\n'}
+[7.501827] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_setup/./config/renesas_ra/ra6m5/create.sh\n'}
+[7.502190] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_setup/./config/renesas_ra/ra6m5/client_uros_packages.repos\n'}
+[7.502549] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_setup/./config/renesas_ra/ra6m5/flash.sh\n'}
+[7.502980] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_setup/./config/renesas_ra/ra6m5/configure.sh\n'}
+[7.503439] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_setup/./config/renesas_ra/ra6m5/build.sh\n'}
+[7.503883] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_setup/./config/renesas_ra/ra6m5/board.repos\n'}
+[7.504343] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_setup/./config/renesas_ra/dev_uros_packages.repos\n'}
+[7.504774] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_setup/./config/client_uros_packages.repos\n'}
+[7.505304] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_setup/./config/host\n'}
+[7.505747] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_setup/./config/host/generic\n'}
+[7.506186] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_setup/./config/host/generic/create.sh\n'}
+[7.506664] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_setup/./config/host/generic/flash.sh\n'}
+[7.507111] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_setup/./config/host/generic/client-host-colcon.meta\n'}
+[7.507582] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_setup/./config/host/generic/build.sh\n'}
+[7.508021] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_setup/./config/host/generic/reset.sh\n'}
+[7.508505] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_setup/./config/host/generic/client_host_packages.repos\n'}
+[7.508947] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_setup/./config/host/generic/package.xml\n'}
+[7.509399] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_setup/./config/host/dev_ros2_packages.txt\n'}
+[7.509839] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_setup/./config/host/client_ros2_packages.txt\n'}
+[7.510281] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_setup/./config/host/dev_uros_packages.repos\n'}
+[7.510714] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_setup/./config/freertos\n'}
+[7.511141] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_setup/./config/freertos/nucleo_f746zg\n'}
+[7.511513] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_setup/./config/freertos/nucleo_f746zg/client-colcon.meta\n'}
+[7.511888] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_setup/./config/freertos/nucleo_f746zg/create.sh\n'}
+[7.512245] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_setup/./config/freertos/nucleo_f746zg/client_uros_packages.repos\n'}
+[7.512679] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_setup/./config/freertos/nucleo_f746zg/flash.sh\n'}
+[7.513156] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_setup/./config/freertos/nucleo_f746zg/configure.sh\n'}
+[7.513588] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_setup/./config/freertos/nucleo_f746zg/build.sh\n'}
+[7.514063] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_setup/./config/freertos/nucleo_f746zg/reset.sh\n'}
+[7.514571] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_setup/./config/freertos/nucleo_f746zg/package.xml\n'}
+[7.515042] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_setup/./config/freertos/nucleo_f746zg/board.repos\n'}
+[7.515511] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_setup/./config/freertos/dev_ros2_packages.txt\n'}
+[7.515956] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_setup/./config/freertos/nucleo_f446re\n'}
+[7.516408] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_setup/./config/freertos/nucleo_f446re/client-colcon.meta\n'}
+[7.516865] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_setup/./config/freertos/nucleo_f446re/create.sh\n'}
+[7.517319] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_setup/./config/freertos/nucleo_f446re/client_uros_packages.repos\n'}
+[7.517808] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_setup/./config/freertos/nucleo_f446re/flash.sh\n'}
+[7.518312] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_setup/./config/freertos/nucleo_f446re/configure.sh\n'}
+[7.518819] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_setup/./config/freertos/nucleo_f446re/build.sh\n'}
+[7.519299] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_setup/./config/freertos/nucleo_f446re/reset.sh\n'}
+[7.519850] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_setup/./config/freertos/nucleo_f446re/package.xml\n'}
+[7.525442] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_setup/./config/freertos/nucleo_f446re/board.repos\n'}
+[7.528905] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_setup/./config/freertos/olimex-stm32-e407\n'}
+[7.529346] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_setup/./config/freertos/olimex-stm32-e407/client-colcon.meta\n'}
+[7.529791] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_setup/./config/freertos/olimex-stm32-e407/create.sh\n'}
+[7.530267] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_setup/./config/freertos/olimex-stm32-e407/client_uros_packages.repos\n'}
+[7.530991] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_setup/./config/freertos/olimex-stm32-e407/flash.sh\n'}
+[7.534222] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_setup/./config/freertos/olimex-stm32-e407/configure.sh\n'}
+[7.536163] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_setup/./config/freertos/olimex-stm32-e407/build.sh\n'}
+[7.538255] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_setup/./config/freertos/olimex-stm32-e407/reset.sh\n'}
+[7.539766] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_setup/./config/freertos/olimex-stm32-e407/package.xml\n'}
+[7.540932] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_setup/./config/freertos/olimex-stm32-e407/board.repos\n'}
+[7.543321] (-) TimerEvent: {}
+[7.544782] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_setup/./config/freertos/list_apps.sh\n'}
+[7.546327] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_setup/./config/freertos/crazyflie21\n'}
+[7.547999] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_setup/./config/freertos/crazyflie21/client-colcon.meta\n'}
+[7.549230] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_setup/./config/freertos/crazyflie21/create.sh\n'}
+[7.551008] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_setup/./config/freertos/crazyflie21/client_uros_packages.repos\n'}
+[7.553394] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_setup/./config/freertos/crazyflie21/flash.sh\n'}
+[7.554455] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_setup/./config/freertos/crazyflie21/configure.sh\n'}
+[7.557128] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_setup/./config/freertos/crazyflie21/build.sh\n'}
+[7.558277] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_setup/./config/freertos/crazyflie21/package.xml\n'}
+[7.559780] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_setup/./config/freertos/crazyflie21/board.repos\n'}
+[7.561548] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_setup/./config/freertos/nucleo_f767zi\n'}
+[7.562593] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_setup/./config/freertos/nucleo_f767zi/client-colcon.meta\n'}
+[7.564088] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_setup/./config/freertos/nucleo_f767zi/create.sh\n'}
+[7.566264] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_setup/./config/freertos/nucleo_f767zi/client_uros_packages.repos\n'}
+[7.567386] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_setup/./config/freertos/nucleo_f767zi/flash.sh\n'}
+[7.569036] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_setup/./config/freertos/nucleo_f767zi/configure.sh\n'}
+[7.570125] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_setup/./config/freertos/nucleo_f767zi/build.sh\n'}
+[7.571723] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_setup/./config/freertos/nucleo_f767zi/reset.sh\n'}
+[7.572982] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_setup/./config/freertos/nucleo_f767zi/package.xml\n'}
+[7.574911] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_setup/./config/freertos/nucleo_f767zi/board.repos\n'}
+[7.577096] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_setup/./config/freertos/nucleo_f446ze\n'}
+[7.578863] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_setup/./config/freertos/nucleo_f446ze/client-colcon.meta\n'}
+[7.579985] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_setup/./config/freertos/nucleo_f446ze/create.sh\n'}
+[7.581128] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_setup/./config/freertos/nucleo_f446ze/client_uros_packages.repos\n'}
+[7.582850] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_setup/./config/freertos/nucleo_f446ze/flash.sh\n'}
+[7.583398] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_setup/./config/freertos/nucleo_f446ze/configure.sh\n'}
+[7.584758] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_setup/./config/freertos/nucleo_f446ze/build.sh\n'}
+[7.585288] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_setup/./config/freertos/nucleo_f446ze/reset.sh\n'}
+[7.586641] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_setup/./config/freertos/nucleo_f446ze/package.xml\n'}
+[7.587715] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_setup/./config/freertos/nucleo_f446ze/board.repos\n'}
+[7.590757] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_setup/./config/freertos/esp32\n'}
+[7.592132] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_setup/./config/freertos/esp32/client-colcon.meta\n'}
+[7.593413] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_setup/./config/freertos/esp32/create.sh\n'}
+[7.595088] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_setup/./config/freertos/esp32/client_uros_packages.repos\n'}
+[7.596256] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_setup/./config/freertos/esp32/flash.sh\n'}
+[7.596727] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_setup/./config/freertos/esp32/configure.sh\n'}
+[7.598150] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_setup/./config/freertos/esp32/README.md\n'}
+[7.599410] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_setup/./config/freertos/esp32/build.sh\n'}
+[7.600192] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_setup/./config/freertos/esp32/package.xml\n'}
+[7.600769] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_setup/./config/freertos/esp32/board.repos\n'}
+[7.601341] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_setup/./config/freertos/dev_uros_packages.repos\n'}
+[7.601855] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_setup/./config/agent_ros2_packages.txt\n'}
+[7.603234] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_setup/./config/utils.sh\n'}
+[7.605440] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_setup/./config/zephyr\n'}
+[7.607410] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_setup/./config/zephyr/generic\n'}
+[7.610038] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_setup/./config/zephyr/generic/client-colcon.meta\n'}
+[7.611282] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_setup/./config/zephyr/generic/create.sh\n'}
+[7.612595] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_setup/./config/zephyr/generic/client_uros_packages.repos\n'}
+[7.616802] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_setup/./config/zephyr/generic/flash.sh\n'}
+[7.618577] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_setup/./config/zephyr/generic/configure.sh\n'}
+[7.620017] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_setup/./config/zephyr/generic/supported_platforms\n'}
+[7.621105] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_setup/./config/zephyr/generic/build.sh\n'}
+[7.623851] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_setup/./config/zephyr/generic/reset.sh\n'}
+[7.626158] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_setup/./config/zephyr/generic/package.xml\n'}
+[7.628045] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_setup/./config/zephyr/generic/board.repos\n'}
+[7.629529] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_setup/./config/zephyr/dev_ros2_packages.txt\n'}
+[7.630317] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_setup/./config/zephyr/list_apps.sh\n'}
+[7.632131] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_setup/./config/zephyr/dev_uros_packages.repos\n'}
+[7.634115] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_setup/./config/client_ros2_packages.txt\n'}
+[7.635628] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_setup/./config/nuttx\n'}
+[7.636465] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_setup/./config/nuttx/generic\n'}
+[7.639084] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_setup/./config/nuttx/generic/client-colcon.meta\n'}
+[7.641360] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_setup/./config/nuttx/generic/create.sh\n'}
+[7.642678] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_setup/./config/nuttx/generic/client_uros_packages.repos\n'}
+[7.643823] (-) TimerEvent: {}
+[7.644206] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_setup/./config/nuttx/generic/flash.sh\n'}
+[7.644624] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_setup/./config/nuttx/generic/uros_packages.repos\n'}
+[7.645306] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_setup/./config/nuttx/generic/configure.sh\n'}
+[7.645714] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_setup/./config/nuttx/generic/supported_platforms\n'}
+[7.646101] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_setup/./config/nuttx/generic/build.sh\n'}
+[7.646674] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_setup/./config/nuttx/generic/reset.sh\n'}
+[7.647196] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_setup/./config/nuttx/generic/package.xml\n'}
+[7.647933] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_setup/./config/nuttx/dev_ros2_packages.txt\n'}
+[7.648365] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_setup/./config/nuttx/dev_uros_packages.repos\n'}
+[7.649098] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_setup/./config/generate_lib\n'}
+[7.649571] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_setup/./config/generate_lib/generic\n'}
+[7.650198] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_setup/./config/generate_lib/generic/client-colcon.meta\n'}
+[7.650667] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_setup/./config/generate_lib/generic/create.sh\n'}
+[7.651385] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_setup/./config/generate_lib/generic/client_uros_packages.repos\n'}
+[7.651950] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_setup/./config/generate_lib/generic/flash.sh\n'}
+[7.652374] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_setup/./config/generate_lib/generic/demo_toolchain.cmake\n'}
+[7.652835] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_setup/./config/generate_lib/generic/build.sh\n'}
+[7.653296] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_setup/./config/generate_lib/generic/package.xml\n'}
+[7.653661] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_setup/./config/generate_lib/dev_ros2_packages.txt\n'}
+[7.654160] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_setup/./config/generate_lib/dev_uros_packages.repos\n'}
+[7.654551] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_setup/lib/micro_ros_setup/create_ws.sh\n'}
+[7.655086] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_setup/lib/micro_ros_setup/create_agent_ws.sh\n'}
+[7.655622] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_setup/lib/micro_ros_setup/create_firmware_ws.sh\n'}
+[7.656455] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_setup/lib/micro_ros_setup/configure_firmware.sh\n'}
+[7.656869] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_setup/lib/micro_ros_setup/flash_firmware.sh\n'}
+[7.657514] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_setup/lib/micro_ros_setup/reset_firmware.sh\n'}
+[7.657943] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_setup/lib/micro_ros_setup/build_firmware.sh\n'}
+[7.658550] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_setup/lib/micro_ros_setup/build_agent.sh\n'}
+[7.658996] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_setup/lib/micro_ros_setup/yaml_filter.py\n'}
+[7.659422] (micro_ros_setup) StdoutLine: {'line': b'-- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_setup/lib/micro_ros_setup/clean_env.sh\n'}
+[7.659915] (micro_ros_setup) CommandEnded: {'returncode': 0}
+[7.745874] (-) TimerEvent: {}
+[7.846777] (-) TimerEvent: {}
+[7.949253] (-) TimerEvent: {}
+[8.051389] (-) TimerEvent: {}
+[8.053067] (micro_ros_setup) JobEnded: {'identifier': 'micro_ros_setup', 'rc': 0}
+[8.054708] (-) EventReactorShutdown: {}

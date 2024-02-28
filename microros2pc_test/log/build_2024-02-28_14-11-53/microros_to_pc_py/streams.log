@@ -1,0 +1,24 @@
+[1.623s] Invoking command in '/home/orangepi/microros2pc_test/src/microros_to_pc_py': PYTHONPATH=/home/orangepi/microros2pc_test/build/microros_to_pc_py/prefix_override:/home/orangepi/microros2pc_test/install/microros_to_pc_py/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/microros_to_pc_py build --build-base /home/orangepi/microros2pc_test/build/microros_to_pc_py/build install --record /home/orangepi/microros2pc_test/build/microros_to_pc_py/install.log --install-scripts $base/lib/microros_to_pc_py --single-version-externally-managed
+[1.901s] running egg_info
+[1.901s] writing ../../build/microros_to_pc_py/microros_to_pc_py.egg-info/PKG-INFO
+[1.902s] writing dependency_links to ../../build/microros_to_pc_py/microros_to_pc_py.egg-info/dependency_links.txt
+[1.903s] writing entry points to ../../build/microros_to_pc_py/microros_to_pc_py.egg-info/entry_points.txt
+[1.903s] writing requirements to ../../build/microros_to_pc_py/microros_to_pc_py.egg-info/requires.txt
+[1.904s] writing top-level names to ../../build/microros_to_pc_py/microros_to_pc_py.egg-info/top_level.txt
+[1.945s] reading manifest file '../../build/microros_to_pc_py/microros_to_pc_py.egg-info/SOURCES.txt'
+[1.947s] writing manifest file '../../build/microros_to_pc_py/microros_to_pc_py.egg-info/SOURCES.txt'
+[1.947s] running build
+[1.948s] running build_py
+[1.948s] copying microros_to_pc_py/microros_to_pc_sub.py -> /home/orangepi/microros2pc_test/build/microros_to_pc_py/build/lib/microros_to_pc_py
+[1.949s] running install
+[1.949s] running install_lib
+[1.950s] copying /home/orangepi/microros2pc_test/build/microros_to_pc_py/build/lib/microros_to_pc_py/microros_to_pc_sub.py -> /home/orangepi/microros2pc_test/install/microros_to_pc_py/lib/python3.8/site-packages/microros_to_pc_py
+[1.950s] byte-compiling /home/orangepi/microros2pc_test/install/microros_to_pc_py/lib/python3.8/site-packages/microros_to_pc_py/microros_to_pc_sub.py to microros_to_pc_sub.cpython-38.pyc
+[1.952s] running install_data
+[1.953s] running install_egg_info
+[1.955s] removing '/home/orangepi/microros2pc_test/install/microros_to_pc_py/lib/python3.8/site-packages/microros_to_pc_py-0.0.0-py3.8.egg-info' (and everything under it)
+[1.956s] Copying ../../build/microros_to_pc_py/microros_to_pc_py.egg-info to /home/orangepi/microros2pc_test/install/microros_to_pc_py/lib/python3.8/site-packages/microros_to_pc_py-0.0.0-py3.8.egg-info
+[1.957s] running install_scripts
+[1.981s] Installing microros_sub script to /home/orangepi/microros2pc_test/install/microros_to_pc_py/lib/microros_to_pc_py
+[1.982s] writing list of installed files to '/home/orangepi/microros2pc_test/build/microros_to_pc_py/install.log'
+[2.030s] Invoked command in '/home/orangepi/microros2pc_test/src/microros_to_pc_py' returned '0': PYTHONPATH=/home/orangepi/microros2pc_test/build/microros_to_pc_py/prefix_override:/home/orangepi/microros2pc_test/install/microros_to_pc_py/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/microros_to_pc_py build --build-base /home/orangepi/microros2pc_test/build/microros_to_pc_py/build install --record /home/orangepi/microros2pc_test/build/microros_to_pc_py/install.log --install-scripts $base/lib/microros_to_pc_py --single-version-externally-managed

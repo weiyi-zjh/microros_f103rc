@@ -1,0 +1,1 @@
+docker run --rm -e http_proxy=http://192.168.9.41:7890 -e https_proxy=http://192.168.9.41:7890 -v "D:\Windowswall\freertos_microros\freertos_rosnode":/project --env MICROROS_LIBRARY_FOLDER=micro_ros_stm32cubemx_utils/microros_static_library microros/micro_ros_static_library_builder:foxy

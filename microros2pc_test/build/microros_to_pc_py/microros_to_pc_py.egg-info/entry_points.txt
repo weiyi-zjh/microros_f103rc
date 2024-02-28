@@ -1,0 +1,3 @@
+[console_scripts]
+microros_sub = microros_to_pc_py.microros_to_pc_sub:main
+

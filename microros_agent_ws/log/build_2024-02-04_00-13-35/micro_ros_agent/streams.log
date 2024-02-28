@@ -1,0 +1,328 @@
+[0.234s] Invoking command in '/home/orangepi/microros_agent_ws/build/micro_ros_agent': AMENT_PREFIX_PATH=/home/orangepi/microros_agent_ws/install/micro_ros_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/orangepi/microros_agent_ws/install/micro_ros_msgs:/home/orangepi/microros_agent_ws/install/micro_ros_setup:/home/orangepi/microros_ws/install/micro_ros_agent:/home/orangepi/microros_ws/install/micro_ros_msgs:/opt/ros/foxy LD_LIBRARY_PATH=/home/orangepi/microros_agent_ws/install/micro_ros_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/orangepi/microros_agent_ws/install/micro_ros_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake /home/orangepi/microros_agent_ws/src/uros/micro-ROS-Agent/micro_ros_agent -DUAGENT_BUILD_EXECUTABLE=OFF -DUAGENT_P2P_PROFILE=OFF --no-warn-unused-cli -DCMAKE_INSTALL_PREFIX=/home/orangepi/microros_agent_ws/install/micro_ros_agent
+[0.265s] Not searching for unused variables given on the command line.
+[0.572s] -- The C compiler identification is GNU 9.4.0
+[0.578s] -- Check for working C compiler: /usr/bin/cc
+[0.813s] -- Check for working C compiler: /usr/bin/cc -- works
+[0.814s] -- Detecting C compiler ABI info
+[1.063s] -- Detecting C compiler ABI info - done
+[1.108s] -- Detecting C compile features
+[1.110s] -- Detecting C compile features - done
+[1.276s] -- The CXX compiler identification is GNU 9.4.0
+[1.281s] -- Check for working CXX compiler: /usr/bin/c++
+[1.529s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[1.530s] -- Detecting CXX compiler ABI info
+[1.800s] -- Detecting CXX compiler ABI info - done
+[1.846s] -- Detecting CXX compile features
+[1.850s] -- Detecting CXX compile features - done
+[1.920s] -- Configuring done
+[1.923s] -- Generating done
+[1.924s] -- Build files have been written to: /home/orangepi/microros_agent_ws/build/micro_ros_agent
+[1.931s] Invoked command in '/home/orangepi/microros_agent_ws/build/micro_ros_agent' returned '0': AMENT_PREFIX_PATH=/home/orangepi/microros_agent_ws/install/micro_ros_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/orangepi/microros_agent_ws/install/micro_ros_msgs:/home/orangepi/microros_agent_ws/install/micro_ros_setup:/home/orangepi/microros_ws/install/micro_ros_agent:/home/orangepi/microros_ws/install/micro_ros_msgs:/opt/ros/foxy LD_LIBRARY_PATH=/home/orangepi/microros_agent_ws/install/micro_ros_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/orangepi/microros_agent_ws/install/micro_ros_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake /home/orangepi/microros_agent_ws/src/uros/micro-ROS-Agent/micro_ros_agent -DUAGENT_BUILD_EXECUTABLE=OFF -DUAGENT_P2P_PROFILE=OFF --no-warn-unused-cli -DCMAKE_INSTALL_PREFIX=/home/orangepi/microros_agent_ws/install/micro_ros_agent
+[1.941s] Invoking command in '/home/orangepi/microros_agent_ws/build/micro_ros_agent': AMENT_PREFIX_PATH=/home/orangepi/microros_agent_ws/install/micro_ros_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/orangepi/microros_agent_ws/install/micro_ros_msgs:/home/orangepi/microros_agent_ws/install/micro_ros_setup:/home/orangepi/microros_ws/install/micro_ros_agent:/home/orangepi/microros_ws/install/micro_ros_msgs:/opt/ros/foxy LD_LIBRARY_PATH=/home/orangepi/microros_agent_ws/install/micro_ros_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/orangepi/microros_agent_ws/install/micro_ros_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/orangepi/microros_agent_ws/build/micro_ros_agent -- -j8 -l8
+[2.090s] [35m[1mScanning dependencies of target xrceagent[0m
+[2.133s] [  6%] [34m[1mCreating directories for 'xrceagent'[0m
+[2.419s] [ 12%] [34m[1mPerforming download step (git clone) for 'xrceagent'[0m
+[2.499s] Cloning into 'xrceagent'...
+[8.794s] Switched to a new branch 'ros2'
+[8.795s] Branch 'ros2' set up to track remote branch 'ros2' from 'origin'.
+[9.171s] [ 25%] [34m[1mNo patch step for 'xrceagent'[0m
+[9.172s] [ 25%] [34m[1mPerforming update step for 'xrceagent'[0m
+[10.474s] Current branch ros2 is up to date.
+[10.604s] [ 31%] [34m[1mPerforming configure step for 'xrceagent'[0m
+[10.634s] loading initial cache file /home/orangepi/microros_agent_ws/build/micro_ros_agent/agent/tmp/xrceagent-cache-.cmake
+[10.798s] -- The C compiler identification is GNU 9.4.0
+[10.806s] -- Check for working C compiler: /usr/bin/cc
+[11.067s] -- Check for working C compiler: /usr/bin/cc -- works
+[11.070s] -- Detecting C compiler ABI info
+[11.302s] -- Detecting C compiler ABI info - done
+[11.360s] -- Detecting C compile features
+[11.360s] -- Detecting C compile features - done
+[11.510s] -- The CXX compiler identification is GNU 9.4.0
+[11.518s] -- Check for working CXX compiler: /usr/bin/c++
+[11.786s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[11.790s] -- Detecting CXX compiler ABI info
+[12.058s] -- Detecting CXX compiler ABI info - done
+[12.112s] -- Detecting CXX compile features
+[12.113s] -- Detecting CXX compile features - done
+[12.122s] -- Looking for pthread.h
+[12.374s] -- Looking for pthread.h - found
+[12.375s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[12.655s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+[12.656s] -- Looking for pthread_create in pthreads
+[12.887s] -- Looking for pthread_create in pthreads - not found
+[12.887s] -- Looking for pthread_create in pthread
+[13.160s] -- Looking for pthread_create in pthread - found
+[13.161s] -- Found Threads: TRUE  
+[13.247s] -- Configuring done
+[13.250s] -- Generating done
+[13.251s] -- Build files have been written to: /home/orangepi/microros_agent_ws/build/micro_ros_agent/agent/src/xrceagent-build
+[13.316s] [ 37%] [34m[1mPerforming build step for 'xrceagent'[0m
+[13.417s] [35m[1mScanning dependencies of target uagent[0m
+[13.454s] [ 12%] [34m[1mCreating directories for 'uagent'[0m
+[13.749s] [ 25%] [34m[1mNo download step for 'uagent'[0m
+[13.857s] [ 37%] [34m[1mNo patch step for 'uagent'[0m
+[13.858s] [ 50%] [34m[1mNo update step for 'uagent'[0m
+[13.950s] [ 62%] [34m[1mPerforming configure step for 'uagent'[0m
+[13.989s] loading initial cache file /home/orangepi/microros_agent_ws/build/micro_ros_agent/agent/src/xrceagent-build/uagent-prefix/tmp/uagent-cache-.cmake
+[14.000s] -- Setting build type to 'Release' as none was specified.
+[14.205s] -- Found tinyxml2: /usr/lib/aarch64-linux-gnu/libtinyxml2.so  
+[14.409s] -- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+[14.550s] -- Configuring done
+[14.608s] -- Generating done
+[14.609s] -- Build files have been written to: /home/orangepi/microros_agent_ws/build/micro_ros_agent/agent/src/xrceagent-build
+[14.679s] [ 75%] [34m[1mPerforming build step for 'uagent'[0m
+[14.799s] [35m[1mScanning dependencies of target microxrcedds_agent[0m
+[15.699s] [  4%] [32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/topic/Topic.cpp.o[0m
+[15.700s] [  4%] [32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/publisher/Publisher.cpp.o[0m
+[15.714s] [  7%] [32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/AgentInstance.cpp.o[0m
+[15.714s] [  9%] [32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/participant/Participant.cpp.o[0m
+[15.715s] [ 14%] [32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/processor/Processor.cpp.o[0m
+[15.715s] [ 14%] [32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/client/ProxyClient.cpp.o[0m
+[15.722s] [ 16%] [32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/Agent.cpp.o[0m
+[15.723s] [ 19%] [32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/Root.cpp.o[0m
+[17.810s] [ 21%] [32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/subscriber/Subscriber.cpp.o[0m
+[17.867s] [ 23%] [32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/datawriter/DataWriter.cpp.o[0m
+[21.393s] [ 26%] [32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/datareader/DataReader.cpp.o[0m
+[22.797s] [ 28%] [32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/requester/Requester.cpp.o[0m
+[26.539s] [ 30%] [32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/replier/Replier.cpp.o[0m
+[26.864s] [ 33%] [32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/object/XRCEObject.cpp.o[0m
+[28.384s] [ 35%] [32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/types/XRCETypes.cpp.o[0m
+[28.525s] [ 38%] [32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/types/MessageHeader.cpp.o[0m
+[28.546s] [ 40%] [32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/types/SubMessageHeader.cpp.o[0m
+[29.337s] [ 42%] [32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/message/InputMessage.cpp.o[0m
+[29.489s] [ 45%] [32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/message/OutputMessage.cpp.o[0m
+[30.750s] [ 47%] [32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/utils/ArgumentParser.cpp.o[0m
+[31.274s] [ 50%] [32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/transport/Server.cpp.o[0m
+[34.672s] [ 52%] [32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/transport/stream_framing/StreamFramingProtocol.cpp.o[0m
+[34.887s] [ 54%] [32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/transport/custom/CustomAgent.cpp.o[0m
+[35.078s] [ 57%] [32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/transport/udp/UDPv4AgentLinux.cpp.o[0m
+[36.379s] [ 59%] [32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/transport/udp/UDPv6AgentLinux.cpp.o[0m
+[37.611s] [ 61%] [32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/transport/tcp/TCPv4AgentLinux.cpp.o[0m
+[42.191s] [ 64%] [32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/transport/tcp/TCPv6AgentLinux.cpp.o[0m
+[42.195s] [ 66%] [32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/transport/serial/SerialAgentLinux.cpp.o[0m
+[42.208s] [ 69%] [32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/transport/serial/TermiosAgentLinux.cpp.o[0m
+[42.652s] [ 71%] [32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/transport/serial/MultiSerialAgentLinux.cpp.o[0m
+[44.339s] [ 73%] [32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/transport/serial/MultiTermiosAgentLinux.cpp.o[0m
+[44.949s] [ 76%] [32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/transport/serial/PseudoTerminalAgentLinux.cpp.o[0m
+[49.166s] [ 78%] [32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/transport/can/CanAgentLinux.cpp.o[0m
+[49.846s] [ 80%] [32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/transport/discovery/DiscoveryServerLinux.cpp.o[0m
+[49.884s] [ 83%] [32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/transport/discovery/DiscoveryServer.cpp.o[0m
+[51.280s] [ 85%] [32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/types/TopicPubSubType.cpp.o[0m
+[51.637s] [ 88%] [32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/xmlobjects/xmlobjects.cpp.o[0m
+[53.436s] [ 90%] [32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/middleware/fast/FastEntities.cpp.o[0m
+[54.068s] [ 92%] [32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/middleware/fast/FastMiddleware.cpp.o[0m
+[54.829s] [ 95%] [32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/middleware/fastdds/FastDDSEntities.cpp.o[0m
+[55.522s] [ 97%] [32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/middleware/fastdds/FastDDSMiddleware.cpp.o[0m
+[68.853s] [100%] [32m[1mLinking CXX shared library libmicroxrcedds_agent.so[0m
+[69.546s] [100%] Built target microxrcedds_agent
+[69.637s] [34m[1mNo install step for 'uagent'[0m
+[69.743s] [34m[1mCompleted 'uagent'[0m
+[69.860s] Built target uagent
+[69.971s] [ 43%] [34m[1mPerforming install step for 'xrceagent'[0m
+[70.228s] [100%] Built target microxrcedds_agent
+[70.292s] [36mInstall the project...[0m
+[70.329s] -- Install configuration: "Release"
+[70.332s] -- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_agent/lib/libmicroxrcedds_agent.so.2.4.1
+[70.340s] -- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_agent/lib/libmicroxrcedds_agent.so.2.4
+[70.341s] -- Set runtime path of "/home/orangepi/microros_agent_ws/install/micro_ros_agent/lib/libmicroxrcedds_agent.so.2.4.1" to ""
+[70.341s] -- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_agent/lib/libmicroxrcedds_agent.so
+[70.342s] -- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_agent/include/uxr/agent
+[70.343s] -- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_agent/include/uxr/agent/datawriter
+[70.344s] -- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_agent/include/uxr/agent/datawriter/DataWriter.hpp
+[70.345s] -- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_agent/include/uxr/agent/AgentInstance.hpp
+[70.345s] -- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_agent/include/uxr/agent/types
+[70.347s] -- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_agent/include/uxr/agent/types/XRCETypes.hpp
+[70.348s] -- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_agent/include/uxr/agent/types/MessageHeader.hpp
+[70.349s] -- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_agent/include/uxr/agent/types/TopicPubSubType.hpp
+[70.350s] -- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_agent/include/uxr/agent/types/Optional.hpp
+[70.351s] -- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_agent/include/uxr/agent/types/SubMessageHeader.hpp
+[70.352s] -- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_agent/include/uxr/agent/publisher
+[70.353s] -- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_agent/include/uxr/agent/publisher/Publisher.hpp
+[70.355s] -- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_agent/include/uxr/agent/client
+[70.356s] -- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_agent/include/uxr/agent/client/ProxyClient.hpp
+[70.356s] -- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_agent/include/uxr/agent/client/session
+[70.357s] -- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_agent/include/uxr/agent/client/session/Session.hpp
+[70.357s] -- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_agent/include/uxr/agent/client/session/SessionInfo.hpp
+[70.358s] -- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_agent/include/uxr/agent/client/session/stream
+[70.358s] -- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_agent/include/uxr/agent/client/session/stream/OutputStream.hpp
+[70.358s] -- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_agent/include/uxr/agent/client/session/stream/InputStream.hpp
+[70.359s] -- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_agent/include/uxr/agent/Root.hpp
+[70.360s] -- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_agent/include/uxr/agent/datareader
+[70.360s] -- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_agent/include/uxr/agent/datareader/DataReader.hpp
+[70.360s] -- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_agent/include/uxr/agent/logger
+[70.361s] -- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_agent/include/uxr/agent/logger/Logger.hpp
+[70.361s] -- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_agent/include/uxr/agent/utils
+[70.361s] -- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_agent/include/uxr/agent/utils/TokenBucket.hpp
+[70.362s] -- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_agent/include/uxr/agent/utils/Time.hpp
+[70.362s] -- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_agent/include/uxr/agent/utils/Color.hpp
+[70.363s] -- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_agent/include/uxr/agent/utils/Functions.hpp
+[70.363s] -- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_agent/include/uxr/agent/utils/Conversion.hpp
+[70.363s] -- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_agent/include/uxr/agent/utils/SharedMutex.hpp
+[70.364s] -- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_agent/include/uxr/agent/utils/SeqNum.hpp
+[70.364s] -- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_agent/include/uxr/agent/utils/ArgumentParser.hpp
+[70.364s] -- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_agent/include/uxr/agent/utils/SharedMutexPriority.hpp
+[70.365s] -- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_agent/include/uxr/agent/reader
+[70.365s] -- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_agent/include/uxr/agent/reader/Reader.hpp
+[70.366s] -- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_agent/include/uxr/agent/subscriber
+[70.366s] -- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_agent/include/uxr/agent/subscriber/Subscriber.hpp
+[70.366s] -- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_agent/include/uxr/agent/processor
+[70.367s] -- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_agent/include/uxr/agent/processor/Processor.hpp
+[70.367s] -- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_agent/include/uxr/agent/participant
+[70.367s] -- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_agent/include/uxr/agent/participant/Participant.hpp
+[70.368s] -- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_agent/include/uxr/agent/transport
+[70.368s] -- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_agent/include/uxr/agent/transport/Server.hpp
+[70.368s] -- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_agent/include/uxr/agent/transport/udp
+[70.369s] -- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_agent/include/uxr/agent/transport/udp/UDPv6AgentWindows.hpp
+[70.369s] -- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_agent/include/uxr/agent/transport/udp/UDPv4AgentWindows.hpp
+[70.369s] -- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_agent/include/uxr/agent/transport/udp/UDPv4AgentLinux.hpp
+[70.370s] -- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_agent/include/uxr/agent/transport/udp/UDPv6AgentLinux.hpp
+[70.370s] -- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_agent/include/uxr/agent/transport/endpoint
+[70.371s] -- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_agent/include/uxr/agent/transport/endpoint/SerialEndPoint.hpp
+[70.371s] -- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_agent/include/uxr/agent/transport/endpoint/CanEndPoint.hpp
+[70.371s] -- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_agent/include/uxr/agent/transport/endpoint/MultiSerialEndPoint.hpp
+[70.372s] -- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_agent/include/uxr/agent/transport/endpoint/IPv6EndPoint.hpp
+[70.372s] -- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_agent/include/uxr/agent/transport/endpoint/IPv4EndPoint.hpp
+[70.372s] -- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_agent/include/uxr/agent/transport/endpoint/CustomEndPoint.hpp
+[70.373s] -- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_agent/include/uxr/agent/transport/custom
+[70.373s] -- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_agent/include/uxr/agent/transport/custom/CustomAgent.hpp
+[70.373s] -- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_agent/include/uxr/agent/transport/tcp
+[70.374s] -- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_agent/include/uxr/agent/transport/tcp/TCPv6AgentLinux.hpp
+[70.374s] -- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_agent/include/uxr/agent/transport/tcp/TCPv4AgentWindows.hpp
+[70.375s] -- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_agent/include/uxr/agent/transport/tcp/TCPv6AgentWindows.hpp
+[70.375s] -- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_agent/include/uxr/agent/transport/tcp/TCPConnection.hpp
+[70.375s] -- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_agent/include/uxr/agent/transport/tcp/TCPv4AgentLinux.hpp
+[70.376s] -- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_agent/include/uxr/agent/transport/tcp/TCPServerBase.hpp
+[70.376s] -- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_agent/include/uxr/agent/transport/serial
+[70.376s] -- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_agent/include/uxr/agent/transport/serial/baud_rate_table_linux.h
+[70.377s] -- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_agent/include/uxr/agent/transport/serial/MultiSerialAgentLinux.hpp
+[70.377s] -- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_agent/include/uxr/agent/transport/serial/SerialAgentLinux.hpp
+[70.377s] -- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_agent/include/uxr/agent/transport/serial/MultiTermiosAgentLinux.hpp
+[70.378s] -- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_agent/include/uxr/agent/transport/serial/TermiosAgentLinux.hpp
+[70.378s] -- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_agent/include/uxr/agent/transport/serial/PseudoTerminalAgentLinux.hpp
+[70.379s] -- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_agent/include/uxr/agent/transport/discovery
+[70.379s] -- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_agent/include/uxr/agent/transport/discovery/DiscoveryServer.hpp
+[70.379s] -- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_agent/include/uxr/agent/transport/discovery/DiscoveryServerWindows.hpp
+[70.380s] -- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_agent/include/uxr/agent/transport/discovery/DiscoveryServerLinux.hpp
+[70.380s] -- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_agent/include/uxr/agent/transport/TransportRc.hpp
+[70.380s] -- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_agent/include/uxr/agent/transport/p2p
+[70.381s] -- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_agent/include/uxr/agent/transport/p2p/AgentDiscoverer.hpp
+[70.381s] -- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_agent/include/uxr/agent/transport/p2p/AgentDiscovererLinux.hpp
+[70.381s] -- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_agent/include/uxr/agent/transport/can
+[70.382s] -- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_agent/include/uxr/agent/transport/can/CanAgentLinux.hpp
+[70.382s] -- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_agent/include/uxr/agent/transport/SessionManager.hpp
+[70.382s] -- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_agent/include/uxr/agent/transport/stream_framing
+[70.383s] -- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_agent/include/uxr/agent/transport/stream_framing/StreamFramingProtocol.hpp
+[70.383s] -- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_agent/include/uxr/agent/transport/util
+[70.384s] -- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_agent/include/uxr/agent/transport/util/InterfaceLinux.hpp
+[70.384s] -- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_agent/include/uxr/agent/transport/util/InterfaceWindows.hpp
+[70.384s] -- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_agent/include/uxr/agent/object
+[70.385s] -- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_agent/include/uxr/agent/object/XRCEObject.hpp
+[70.385s] -- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_agent/include/uxr/agent/visibility.hpp
+[70.385s] -- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_agent/include/uxr/agent/middleware
+[70.386s] -- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_agent/include/uxr/agent/middleware/fast
+[70.386s] -- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_agent/include/uxr/agent/middleware/fast/FastMiddleware.hpp
+[70.386s] -- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_agent/include/uxr/agent/middleware/fast/FastEntities.hpp
+[70.387s] -- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_agent/include/uxr/agent/middleware/ced
+[70.387s] -- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_agent/include/uxr/agent/middleware/ced/CedMiddleware.hpp
+[70.387s] -- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_agent/include/uxr/agent/middleware/ced/CedEntities.hpp
+[70.388s] -- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_agent/include/uxr/agent/middleware/Middleware.hpp
+[70.388s] -- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_agent/include/uxr/agent/middleware/utils
+[70.389s] -- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_agent/include/uxr/agent/middleware/utils/Callbacks.hpp
+[70.389s] -- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_agent/include/uxr/agent/middleware/fastdds
+[70.389s] -- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_agent/include/uxr/agent/middleware/fastdds/FastDDSEntities.hpp
+[70.390s] -- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_agent/include/uxr/agent/middleware/fastdds/FastDDSMiddleware.hpp
+[70.390s] -- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_agent/include/uxr/agent/scheduler
+[70.390s] -- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_agent/include/uxr/agent/scheduler/PacketScheduler.hpp
+[70.391s] -- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_agent/include/uxr/agent/scheduler/Scheduler.hpp
+[70.391s] -- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_agent/include/uxr/agent/requester
+[70.391s] -- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_agent/include/uxr/agent/requester/Requester.hpp
+[70.392s] -- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_agent/include/uxr/agent/p2p
+[70.392s] -- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_agent/include/uxr/agent/p2p/InternalClient.hpp
+[70.393s] -- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_agent/include/uxr/agent/p2p/InternalClientManager.hpp
+[70.393s] -- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_agent/include/uxr/agent/Agent.hpp
+[70.393s] -- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_agent/include/uxr/agent/topic
+[70.393s] -- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_agent/include/uxr/agent/topic/Topic.hpp
+[70.393s] -- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_agent/include/uxr/agent/message
+[70.393s] -- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_agent/include/uxr/agent/message/OutputMessage.hpp
+[70.394s] -- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_agent/include/uxr/agent/message/Packet.hpp
+[70.394s] -- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_agent/include/uxr/agent/message/InputMessage.hpp
+[70.394s] -- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_agent/include/uxr/agent/replier
+[70.394s] -- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_agent/include/uxr/agent/replier/Replier.hpp
+[70.394s] -- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_agent/share/microxrcedds_agent/cmake/microxrcedds_agentTargets.cmake
+[70.394s] -- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_agent/share/microxrcedds_agent/cmake/microxrcedds_agentTargets-release.cmake
+[70.395s] -- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_agent/include/uxr/agent/config.hpp
+[70.395s] -- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_agent/share/microxrcedds_agent/LICENSE
+[70.395s] -- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_agent/share/microxrcedds_agent/cmake/microxrcedds_agentConfig.cmake
+[70.395s] -- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_agent/share/microxrcedds_agent/cmake/microxrcedds_agentConfigVersion.cmake
+[70.427s] [ 50%] [34m[1mCompleted 'xrceagent'[0m
+[70.562s] [ 50%] Built target xrceagent
+[70.601s] [35m[1mScanning dependencies of target micro_ros_agent[0m
+[70.638s] [ 56%] [34m[1mCreating directories for 'micro_ros_agent'[0m
+[70.935s] [ 62%] [34m[1mNo download step for 'micro_ros_agent'[0m
+[71.038s] [ 75%] [34m[1mNo patch step for 'micro_ros_agent'[0m
+[71.038s] [ 75%] [34m[1mNo update step for 'micro_ros_agent'[0m
+[71.136s] [ 81%] [34m[1mPerforming configure step for 'micro_ros_agent'[0m
+[71.166s] loading initial cache file /home/orangepi/microros_agent_ws/build/micro_ros_agent/micro_ros_agent-prefix/tmp/micro_ros_agent-cache-.cmake
+[71.174s] -- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)
+[71.239s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[71.239s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[71.906s] -- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+[71.922s] -- Looking for C++ include pthread.h
+[72.190s] -- Looking for C++ include pthread.h - found
+[72.191s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[72.485s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+[72.485s] -- Looking for pthread_create in pthreads
+[72.739s] -- Looking for pthread_create in pthreads - not found
+[72.740s] -- Looking for pthread_create in pthread
+[73.011s] -- Looking for pthread_create in pthread - found
+[73.016s] -- Found Threads: TRUE  
+[73.028s] -- Found rosidl_cmake: 1.3.1 (/opt/ros/foxy/share/rosidl_cmake/cmake)
+[73.034s] -- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[73.104s] -- Found fastrtps_cmake_module: 1.0.4 (/opt/ros/foxy/share/fastrtps_cmake_module/cmake)
+[73.108s] -- Found rmw_dds_common: 1.0.3 (/opt/ros/foxy/share/rmw_dds_common/cmake)
+[73.173s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[73.258s] -- Found FastRTPS: /opt/ros/foxy/include  
+[73.367s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[73.415s] -- Found rmw_fastrtps_shared_cpp: 1.3.2 (/opt/ros/foxy/share/rmw_fastrtps_shared_cpp/cmake)
+[73.499s] -- Found ament_lint_auto: 0.9.8 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[73.503s] -- Found ament_cmake_gtest: 0.9.12 (/opt/ros/foxy/share/ament_cmake_gtest/cmake)
+[73.504s] -- Found micro_ros_msgs: 1.0.0 (/home/orangepi/microros_agent_ws/install/micro_ros_msgs/share/micro_ros_msgs/cmake)
+[73.638s] -- Configuring done
+[73.660s] -- Generating done
+[73.670s] -- Build files have been written to: /home/orangepi/microros_agent_ws/build/micro_ros_agent
+[73.753s] [ 87%] [34m[1mPerforming build step for 'micro_ros_agent'[0m
+[73.876s] [35m[1mScanning dependencies of target micro_ros_agent[0m
+[75.178s] [ 16%] [32mBuilding CXX object CMakeFiles/micro_ros_agent.dir/src/agent/graph_manager/graph_manager.cpp.o[0m
+[75.190s] [ 33%] [32mBuilding CXX object CMakeFiles/micro_ros_agent.dir/src/main.cpp.o[0m
+[75.191s] [ 50%] [32mBuilding CXX object CMakeFiles/micro_ros_agent.dir/src/agent/Agent.cpp.o[0m
+[75.192s] [ 66%] [32mBuilding CXX object CMakeFiles/micro_ros_agent.dir/src/agent/graph_manager/graph_typesupport.cpp.o[0m
+[75.193s] [ 83%] [32mBuilding CXX object CMakeFiles/micro_ros_agent.dir/src/agent/utils/demangle.cpp.o[0m
+[80.775s] [100%] [32m[1mLinking CXX executable micro_ros_agent[0m
+[81.395s] [100%] Built target micro_ros_agent
+[81.495s] [34m[1mNo install step for 'micro_ros_agent'[0m
+[81.599s] [34m[1mCompleted 'micro_ros_agent'[0m
+[81.728s] Built target micro_ros_agent
+[81.774s] Invoked command in '/home/orangepi/microros_agent_ws/build/micro_ros_agent' returned '0': AMENT_PREFIX_PATH=/home/orangepi/microros_agent_ws/install/micro_ros_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/orangepi/microros_agent_ws/install/micro_ros_msgs:/home/orangepi/microros_agent_ws/install/micro_ros_setup:/home/orangepi/microros_ws/install/micro_ros_agent:/home/orangepi/microros_ws/install/micro_ros_msgs:/opt/ros/foxy LD_LIBRARY_PATH=/home/orangepi/microros_agent_ws/install/micro_ros_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/orangepi/microros_agent_ws/install/micro_ros_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/orangepi/microros_agent_ws/build/micro_ros_agent -- -j8 -l8
+[81.890s] Invoking command in '/home/orangepi/microros_agent_ws/build/micro_ros_agent': AMENT_PREFIX_PATH=/home/orangepi/microros_agent_ws/install/micro_ros_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/orangepi/microros_agent_ws/install/micro_ros_msgs:/home/orangepi/microros_agent_ws/install/micro_ros_setup:/home/orangepi/microros_ws/install/micro_ros_agent:/home/orangepi/microros_ws/install/micro_ros_msgs:/opt/ros/foxy LD_LIBRARY_PATH=/home/orangepi/microros_agent_ws/install/micro_ros_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/orangepi/microros_agent_ws/install/micro_ros_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/orangepi/microros_agent_ws/build/micro_ros_agent
+[81.922s] -- Install configuration: ""
+[81.923s] -- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_agent/share/ament_index/resource_index/package_run_dependencies/micro_ros_agent
+[81.924s] -- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_agent/share/ament_index/resource_index/parent_prefix_path/micro_ros_agent
+[81.924s] -- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_agent/share/micro_ros_agent/environment/ament_prefix_path.sh
+[81.925s] -- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_agent/share/micro_ros_agent/environment/ament_prefix_path.dsv
+[81.925s] -- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_agent/share/micro_ros_agent/environment/path.sh
+[81.925s] -- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_agent/share/micro_ros_agent/environment/path.dsv
+[81.926s] -- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_agent/share/micro_ros_agent/local_setup.bash
+[81.926s] -- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_agent/share/micro_ros_agent/local_setup.sh
+[81.927s] -- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_agent/share/micro_ros_agent/local_setup.zsh
+[81.927s] -- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_agent/share/micro_ros_agent/local_setup.dsv
+[81.928s] -- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_agent/share/micro_ros_agent/package.dsv
+[81.928s] -- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_agent/share/ament_index/resource_index/packages/micro_ros_agent
+[81.928s] -- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_agent/share/micro_ros_agent/cmake/ament_cmake_export_dependencies-extras.cmake
+[81.929s] -- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_agent/share/micro_ros_agent/cmake/micro_ros_agentConfig.cmake
+[81.930s] -- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_agent/share/micro_ros_agent/cmake/micro_ros_agentConfig-version.cmake
+[81.932s] -- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_agent/share/micro_ros_agent/package.xml
+[81.933s] -- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_agent/lib/micro_ros_agent/micro_ros_agent
+[81.934s] -- Set runtime path of "/home/orangepi/microros_agent_ws/install/micro_ros_agent/lib/micro_ros_agent/micro_ros_agent" to ""
+[81.934s] -- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_agent/share/micro_ros_agent/launch
+[81.934s] -- Installing: /home/orangepi/microros_agent_ws/install/micro_ros_agent/share/micro_ros_agent/launch/micro_ros_agent_launch.py
+[81.935s] Invoked command in '/home/orangepi/microros_agent_ws/build/micro_ros_agent' returned '0': AMENT_PREFIX_PATH=/home/orangepi/microros_agent_ws/install/micro_ros_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/orangepi/microros_agent_ws/install/micro_ros_msgs:/home/orangepi/microros_agent_ws/install/micro_ros_setup:/home/orangepi/microros_ws/install/micro_ros_agent:/home/orangepi/microros_ws/install/micro_ros_msgs:/opt/ros/foxy LD_LIBRARY_PATH=/home/orangepi/microros_agent_ws/install/micro_ros_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/orangepi/microros_agent_ws/install/micro_ros_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/orangepi/microros_agent_ws/build/micro_ros_agent

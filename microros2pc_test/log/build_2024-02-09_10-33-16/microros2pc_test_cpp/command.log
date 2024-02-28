@@ -1,0 +1,1 @@
+Invoking command in '/home/orangepi/microros2pc_test/build/microros2pc_test_cpp': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/orangepi/microros2pc_test/build/microros2pc_test_cpp -- -j8 -l8

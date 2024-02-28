@@ -1,0 +1,753 @@
+ARM GAS  C:\Users\weiyi\AppData\Local\Temp\ccPAkyLi.s 			page 1
+
+
+   1              		.cpu cortex-m3
+   2              		.eabi_attribute 20, 1
+   3              		.eabi_attribute 21, 1
+   4              		.eabi_attribute 23, 3
+   5              		.eabi_attribute 24, 1
+   6              		.eabi_attribute 25, 1
+   7              		.eabi_attribute 26, 1
+   8              		.eabi_attribute 30, 1
+   9              		.eabi_attribute 34, 1
+  10              		.eabi_attribute 18, 4
+  11              		.file	"freertos.c"
+  12              		.text
+  13              	.Ltext0:
+  14              		.cfi_sections	.debug_frame
+  15              		.section	.rodata.StartDefaultTask.str1.4,"aMS",%progbits,1
+  16              		.align	2
+  17              	.LC0:
+  18 0000 4572726F 		.ascii	"Error on default allocators (line %d)\012\000"
+  18      72206F6E 
+  18      20646566 
+  18      61756C74 
+  18      20616C6C 
+  19 0027 00       		.align	2
+  20              	.LC1:
+  21 0028 00       		.ascii	"\000"
+  22 0029 000000   		.align	2
+  23              	.LC2:
+  24 002c 63756265 		.ascii	"cubemx_node\000"
+  24      6D785F6E 
+  24      6F646500 
+  25              		.align	2
+  26              	.LC3:
+  27 0038 63756265 		.ascii	"cube_node\000"
+  27      5F6E6F64 
+  27      6500
+  28 0042 0000     		.align	2
+  29              	.LC4:
+  30 0044 4572726F 		.ascii	"Error publishing (line %d)\012\000"
+  30      72207075 
+  30      626C6973 
+  30      68696E67 
+  30      20286C69 
+  31              		.section	.text.StartDefaultTask,"ax",%progbits
+  32              		.align	1
+  33              		.global	StartDefaultTask
+  34              		.arch armv7-m
+  35              		.syntax unified
+  36              		.thumb
+  37              		.thumb_func
+  38              		.fpu softvfp
+  40              	StartDefaultTask:
+  41              	.LVL0:
+  42              	.LFB74:
+  43              		.file 1 "Core/Src/freertos.c"
+   1:Core/Src/freertos.c **** /* USER CODE BEGIN Header */
+   2:Core/Src/freertos.c **** /**
+   3:Core/Src/freertos.c ****   ******************************************************************************
+ARM GAS  C:\Users\weiyi\AppData\Local\Temp\ccPAkyLi.s 			page 2
+
+
+   4:Core/Src/freertos.c ****   * File Name          : freertos.c
+   5:Core/Src/freertos.c ****   * Description        : Code for freertos applications
+   6:Core/Src/freertos.c ****   ******************************************************************************
+   7:Core/Src/freertos.c ****   * @attention
+   8:Core/Src/freertos.c ****   *
+   9:Core/Src/freertos.c ****   * Copyright (c) 2024 STMicroelectronics.
+  10:Core/Src/freertos.c ****   * All rights reserved.
+  11:Core/Src/freertos.c ****   *
+  12:Core/Src/freertos.c ****   * This software is licensed under terms that can be found in the LICENSE file
+  13:Core/Src/freertos.c ****   * in the root directory of this software component.
+  14:Core/Src/freertos.c ****   * If no LICENSE file comes with this software, it is provided AS-IS.
+  15:Core/Src/freertos.c ****   *
+  16:Core/Src/freertos.c ****   ******************************************************************************
+  17:Core/Src/freertos.c ****   */
+  18:Core/Src/freertos.c **** /* USER CODE END Header */
+  19:Core/Src/freertos.c **** 
+  20:Core/Src/freertos.c **** /* Includes ------------------------------------------------------------------*/
+  21:Core/Src/freertos.c **** #include "FreeRTOS.h"
+  22:Core/Src/freertos.c **** #include "task.h"
+  23:Core/Src/freertos.c **** #include "main.h"
+  24:Core/Src/freertos.c **** #include "cmsis_os.h"
+  25:Core/Src/freertos.c **** 
+  26:Core/Src/freertos.c **** /* Private includes ----------------------------------------------------------*/
+  27:Core/Src/freertos.c **** /* USER CODE BEGIN Includes */
+  28:Core/Src/freertos.c **** #include "usart.h"
+  29:Core/Src/freertos.c **** #include <rcl/rcl.h>
+  30:Core/Src/freertos.c **** #include <rcl/error_handling.h>
+  31:Core/Src/freertos.c **** #include <rclc/rclc.h>
+  32:Core/Src/freertos.c **** #include <rclc/executor.h>
+  33:Core/Src/freertos.c **** #include <uxr/client/transport.h>
+  34:Core/Src/freertos.c **** #include <rmw_microxrcedds_c/config.h>
+  35:Core/Src/freertos.c **** #include <rmw_microros/rmw_microros.h>
+  36:Core/Src/freertos.c **** 
+  37:Core/Src/freertos.c **** #include <std_msgs/msg/int32.h>
+  38:Core/Src/freertos.c **** /* USER CODE END Includes */
+  39:Core/Src/freertos.c **** 
+  40:Core/Src/freertos.c **** /* Private typedef -----------------------------------------------------------*/
+  41:Core/Src/freertos.c **** typedef StaticTask_t osStaticThreadDef_t;
+  42:Core/Src/freertos.c **** /* USER CODE BEGIN PTD */
+  43:Core/Src/freertos.c **** 
+  44:Core/Src/freertos.c **** /* USER CODE END PTD */
+  45:Core/Src/freertos.c **** 
+  46:Core/Src/freertos.c **** /* Private define ------------------------------------------------------------*/
+  47:Core/Src/freertos.c **** /* USER CODE BEGIN PD */
+  48:Core/Src/freertos.c **** 
+  49:Core/Src/freertos.c **** /* USER CODE END PD */
+  50:Core/Src/freertos.c **** 
+  51:Core/Src/freertos.c **** /* Private macro -------------------------------------------------------------*/
+  52:Core/Src/freertos.c **** /* USER CODE BEGIN PM */
+  53:Core/Src/freertos.c **** 
+  54:Core/Src/freertos.c **** /* USER CODE END PM */
+  55:Core/Src/freertos.c **** 
+  56:Core/Src/freertos.c **** /* Private variables ---------------------------------------------------------*/
+  57:Core/Src/freertos.c **** /* USER CODE BEGIN Variables */
+  58:Core/Src/freertos.c **** 
+  59:Core/Src/freertos.c **** /* USER CODE END Variables */
+  60:Core/Src/freertos.c **** /* Definitions for defaultTask */
+ARM GAS  C:\Users\weiyi\AppData\Local\Temp\ccPAkyLi.s 			page 3
+
+
+  61:Core/Src/freertos.c **** osThreadId_t defaultTaskHandle;
+  62:Core/Src/freertos.c **** uint32_t defaultTaskBuffer[ 3000 ];
+  63:Core/Src/freertos.c **** osStaticThreadDef_t defaultTaskControlBlock;
+  64:Core/Src/freertos.c **** const osThreadAttr_t defaultTask_attributes = {
+  65:Core/Src/freertos.c ****   .name = "defaultTask",
+  66:Core/Src/freertos.c ****   .cb_mem = &defaultTaskControlBlock,
+  67:Core/Src/freertos.c ****   .cb_size = sizeof(defaultTaskControlBlock),
+  68:Core/Src/freertos.c ****   .stack_mem = &defaultTaskBuffer[0],
+  69:Core/Src/freertos.c ****   .stack_size = sizeof(defaultTaskBuffer),
+  70:Core/Src/freertos.c ****   .priority = (osPriority_t) osPriorityNormal,
+  71:Core/Src/freertos.c **** };
+  72:Core/Src/freertos.c **** /* Definitions for LEDTask */
+  73:Core/Src/freertos.c **** osThreadId_t LEDTaskHandle;
+  74:Core/Src/freertos.c **** const osThreadAttr_t LEDTask_attributes = {
+  75:Core/Src/freertos.c ****   .name = "LEDTask",
+  76:Core/Src/freertos.c ****   .stack_size = 128 * 4,
+  77:Core/Src/freertos.c ****   .priority = (osPriority_t) osPriorityLow,
+  78:Core/Src/freertos.c **** };
+  79:Core/Src/freertos.c **** 
+  80:Core/Src/freertos.c **** /* Private function prototypes -----------------------------------------------*/
+  81:Core/Src/freertos.c **** /* USER CODE BEGIN FunctionPrototypes */
+  82:Core/Src/freertos.c **** bool cubemx_transport_open(struct uxrCustomTransport * transport);
+  83:Core/Src/freertos.c **** bool cubemx_transport_close(struct uxrCustomTransport * transport);
+  84:Core/Src/freertos.c **** size_t cubemx_transport_write(struct uxrCustomTransport* transport, const uint8_t * buf, size_t len
+  85:Core/Src/freertos.c **** size_t cubemx_transport_read(struct uxrCustomTransport* transport, uint8_t* buf, size_t len, int ti
+  86:Core/Src/freertos.c **** 
+  87:Core/Src/freertos.c **** void * microros_allocate(size_t size, void * state);
+  88:Core/Src/freertos.c **** void microros_deallocate(void * pointer, void * state);
+  89:Core/Src/freertos.c **** void * microros_reallocate(void * pointer, size_t size, void * state);
+  90:Core/Src/freertos.c **** void * microros_zero_allocate(size_t number_of_elements, size_t size_of_element, void * state);
+  91:Core/Src/freertos.c **** /* USER CODE END FunctionPrototypes */
+  92:Core/Src/freertos.c **** 
+  93:Core/Src/freertos.c **** void StartDefaultTask(void *argument);
+  94:Core/Src/freertos.c **** void StartTask02(void *argument);
+  95:Core/Src/freertos.c **** 
+  96:Core/Src/freertos.c **** void MX_FREERTOS_Init(void); /* (MISRA C 2004 rule 8.1) */
+  97:Core/Src/freertos.c **** 
+  98:Core/Src/freertos.c **** /**
+  99:Core/Src/freertos.c ****   * @brief  FreeRTOS initialization
+ 100:Core/Src/freertos.c ****   * @param  None
+ 101:Core/Src/freertos.c ****   * @retval None
+ 102:Core/Src/freertos.c ****   */
+ 103:Core/Src/freertos.c **** void MX_FREERTOS_Init(void) {
+ 104:Core/Src/freertos.c ****   /* USER CODE BEGIN Init */
+ 105:Core/Src/freertos.c **** 
+ 106:Core/Src/freertos.c ****   /* USER CODE END Init */
+ 107:Core/Src/freertos.c **** 
+ 108:Core/Src/freertos.c ****   /* USER CODE BEGIN RTOS_MUTEX */
+ 109:Core/Src/freertos.c ****   /* add mutexes, ... */
+ 110:Core/Src/freertos.c ****   /* USER CODE END RTOS_MUTEX */
+ 111:Core/Src/freertos.c **** 
+ 112:Core/Src/freertos.c ****   /* USER CODE BEGIN RTOS_SEMAPHORES */
+ 113:Core/Src/freertos.c ****   /* add semaphores, ... */
+ 114:Core/Src/freertos.c ****   /* USER CODE END RTOS_SEMAPHORES */
+ 115:Core/Src/freertos.c **** 
+ 116:Core/Src/freertos.c ****   /* USER CODE BEGIN RTOS_TIMERS */
+ 117:Core/Src/freertos.c ****   /* start timers, add new ones, ... */
+ARM GAS  C:\Users\weiyi\AppData\Local\Temp\ccPAkyLi.s 			page 4
+
+
+ 118:Core/Src/freertos.c ****   /* USER CODE END RTOS_TIMERS */
+ 119:Core/Src/freertos.c **** 
+ 120:Core/Src/freertos.c ****   /* USER CODE BEGIN RTOS_QUEUES */
+ 121:Core/Src/freertos.c ****   /* add queues, ... */
+ 122:Core/Src/freertos.c ****   /* USER CODE END RTOS_QUEUES */
+ 123:Core/Src/freertos.c **** 
+ 124:Core/Src/freertos.c ****   /* Create the thread(s) */
+ 125:Core/Src/freertos.c ****   /* creation of defaultTask */
+ 126:Core/Src/freertos.c ****   defaultTaskHandle = osThreadNew(StartDefaultTask, NULL, &defaultTask_attributes);
+ 127:Core/Src/freertos.c **** 
+ 128:Core/Src/freertos.c ****   /* creation of LEDTask */
+ 129:Core/Src/freertos.c ****   LEDTaskHandle = osThreadNew(StartTask02, NULL, &LEDTask_attributes);
+ 130:Core/Src/freertos.c **** 
+ 131:Core/Src/freertos.c ****   /* USER CODE BEGIN RTOS_THREADS */
+ 132:Core/Src/freertos.c ****   /* add threads, ... */
+ 133:Core/Src/freertos.c ****   /* USER CODE END RTOS_THREADS */
+ 134:Core/Src/freertos.c **** 
+ 135:Core/Src/freertos.c ****   /* USER CODE BEGIN RTOS_EVENTS */
+ 136:Core/Src/freertos.c ****   /* add events, ... */
+ 137:Core/Src/freertos.c ****   /* USER CODE END RTOS_EVENTS */
+ 138:Core/Src/freertos.c **** 
+ 139:Core/Src/freertos.c **** }
+ 140:Core/Src/freertos.c **** 
+ 141:Core/Src/freertos.c **** /* USER CODE BEGIN Header_StartDefaultTask */
+ 142:Core/Src/freertos.c **** /**
+ 143:Core/Src/freertos.c ****   * @brief  Function implementing the defaultTask thread.
+ 144:Core/Src/freertos.c ****   * @param  argument: Not used
+ 145:Core/Src/freertos.c ****   * @retval None
+ 146:Core/Src/freertos.c ****   */
+ 147:Core/Src/freertos.c **** /* USER CODE END Header_StartDefaultTask */
+ 148:Core/Src/freertos.c **** void StartDefaultTask(void *argument)
+ 149:Core/Src/freertos.c **** {
+  44              		.loc 1 149 1 view -0
+  45              		.cfi_startproc
+  46              		@ args = 0, pretend = 0, frame = 136
+  47              		@ frame_needed = 0, uses_anonymous_args = 0
+  48              		.loc 1 149 1 is_stmt 0 view .LVU1
+  49 0000 00B5     		push	{lr}
+  50              	.LCFI0:
+  51              		.cfi_def_cfa_offset 4
+  52              		.cfi_offset 14, -4
+  53 0002 A5B0     		sub	sp, sp, #148
+  54              	.LCFI1:
+  55              		.cfi_def_cfa_offset 152
+ 150:Core/Src/freertos.c ****   /* USER CODE BEGIN StartDefaultTask */
+ 151:Core/Src/freertos.c ****     /* Infinite loop */
+ 152:Core/Src/freertos.c ****     // micro-ROS configuration
+ 153:Core/Src/freertos.c **** 
+ 154:Core/Src/freertos.c ****     rmw_uros_set_custom_transport(
+  56              		.loc 1 154 5 is_stmt 1 view .LVU2
+  57 0004 2A4B     		ldr	r3, .L8
+  58 0006 0193     		str	r3, [sp, #4]
+  59 0008 2A4B     		ldr	r3, .L8+4
+  60 000a 0093     		str	r3, [sp]
+  61 000c 2A4B     		ldr	r3, .L8+8
+  62 000e 2B4A     		ldr	r2, .L8+12
+  63 0010 2B49     		ldr	r1, .L8+16
+ARM GAS  C:\Users\weiyi\AppData\Local\Temp\ccPAkyLi.s 			page 5
+
+
+  64 0012 0120     		movs	r0, #1
+  65              	.LVL1:
+  66              		.loc 1 154 5 is_stmt 0 view .LVU3
+  67 0014 FFF7FEFF 		bl	rmw_uros_set_custom_transport
+  68              	.LVL2:
+ 155:Core/Src/freertos.c ****             true,
+ 156:Core/Src/freertos.c ****             (void *) &huart1,
+ 157:Core/Src/freertos.c ****             cubemx_transport_open,
+ 158:Core/Src/freertos.c ****             cubemx_transport_close,
+ 159:Core/Src/freertos.c ****             cubemx_transport_write,
+ 160:Core/Src/freertos.c ****             cubemx_transport_read);
+ 161:Core/Src/freertos.c **** 
+ 162:Core/Src/freertos.c ****     rcl_allocator_t freeRTOS_allocator = rcutils_get_zero_initialized_allocator();
+  69              		.loc 1 162 5 is_stmt 1 view .LVU4
+  70              		.loc 1 162 42 is_stmt 0 view .LVU5
+  71 0018 1FA8     		add	r0, sp, #124
+  72 001a FFF7FEFF 		bl	rcutils_get_zero_initialized_allocator
+  73              	.LVL3:
+ 163:Core/Src/freertos.c ****     freeRTOS_allocator.allocate = microros_allocate;
+  74              		.loc 1 163 5 is_stmt 1 view .LVU6
+  75              		.loc 1 163 33 is_stmt 0 view .LVU7
+  76 001e 294B     		ldr	r3, .L8+20
+  77 0020 1F93     		str	r3, [sp, #124]
+ 164:Core/Src/freertos.c ****     freeRTOS_allocator.deallocate = microros_deallocate;
+  78              		.loc 1 164 5 is_stmt 1 view .LVU8
+  79              		.loc 1 164 35 is_stmt 0 view .LVU9
+  80 0022 294B     		ldr	r3, .L8+24
+  81 0024 2093     		str	r3, [sp, #128]
+ 165:Core/Src/freertos.c ****     freeRTOS_allocator.reallocate = microros_reallocate;
+  82              		.loc 1 165 5 is_stmt 1 view .LVU10
+  83              		.loc 1 165 35 is_stmt 0 view .LVU11
+  84 0026 294B     		ldr	r3, .L8+28
+  85 0028 2193     		str	r3, [sp, #132]
+ 166:Core/Src/freertos.c ****     freeRTOS_allocator.zero_allocate =  microros_zero_allocate;
+  86              		.loc 1 166 5 is_stmt 1 view .LVU12
+  87              		.loc 1 166 38 is_stmt 0 view .LVU13
+  88 002a 294B     		ldr	r3, .L8+32
+  89 002c 2293     		str	r3, [sp, #136]
+ 167:Core/Src/freertos.c **** 
+ 168:Core/Src/freertos.c ****     if (!rcutils_set_default_allocator(&freeRTOS_allocator)) {
+  90              		.loc 1 168 5 is_stmt 1 view .LVU14
+  91              		.loc 1 168 10 is_stmt 0 view .LVU15
+  92 002e 1FA8     		add	r0, sp, #124
+  93 0030 FFF7FEFF 		bl	rcutils_set_default_allocator
+  94              	.LVL4:
+  95              		.loc 1 168 8 view .LVU16
+  96 0034 28B3     		cbz	r0, .L6
+  97              	.L2:
+ 169:Core/Src/freertos.c ****         printf("Error on default allocators (line %d)\n", __LINE__);
+ 170:Core/Src/freertos.c ****     }
+ 171:Core/Src/freertos.c **** 
+ 172:Core/Src/freertos.c ****     // micro-ROS app
+ 173:Core/Src/freertos.c **** 
+ 174:Core/Src/freertos.c ****     rcl_publisher_t publisher;
+  98              		.loc 1 174 5 is_stmt 1 view .LVU17
+ 175:Core/Src/freertos.c ****     std_msgs__msg__Int32 msg;
+  99              		.loc 1 175 5 view .LVU18
+ARM GAS  C:\Users\weiyi\AppData\Local\Temp\ccPAkyLi.s 			page 6
+
+
+ 176:Core/Src/freertos.c ****     rclc_support_t support;
+ 100              		.loc 1 176 5 view .LVU19
+ 177:Core/Src/freertos.c ****     rcl_allocator_t allocator;
+ 101              		.loc 1 177 5 view .LVU20
+ 178:Core/Src/freertos.c ****     rcl_node_t node;
+ 102              		.loc 1 178 5 view .LVU21
+ 179:Core/Src/freertos.c **** 
+ 180:Core/Src/freertos.c ****     allocator = rcl_get_default_allocator();
+ 103              		.loc 1 180 5 view .LVU22
+ 104              		.loc 1 180 17 is_stmt 0 view .LVU23
+ 105 0036 02A8     		add	r0, sp, #8
+ 106 0038 FFF7FEFF 		bl	rcutils_get_default_allocator
+ 107              	.LVL5:
+ 108 003c 0DF1280E 		add	lr, sp, #40
+ 109 0040 0DF1080C 		add	ip, sp, #8
+ 110 0044 BCE80F00 		ldmia	ip!, {r0, r1, r2, r3}
+ 111 0048 AEE80F00 		stmia	lr!, {r0, r1, r2, r3}
+ 112 004c DCF80030 		ldr	r3, [ip]
+ 113 0050 CEF80030 		str	r3, [lr]
+ 181:Core/Src/freertos.c **** 
+ 182:Core/Src/freertos.c ****     //create init_options
+ 183:Core/Src/freertos.c ****     rclc_support_init(&support, 0, NULL, &allocator);
+ 114              		.loc 1 183 5 is_stmt 1 view .LVU24
+ 115 0054 0AAB     		add	r3, sp, #40
+ 116 0056 0022     		movs	r2, #0
+ 117 0058 1146     		mov	r1, r2
+ 118 005a 0FA8     		add	r0, sp, #60
+ 119 005c FFF7FEFF 		bl	rclc_support_init
+ 120              	.LVL6:
+ 184:Core/Src/freertos.c **** 
+ 185:Core/Src/freertos.c ****     // create node
+ 186:Core/Src/freertos.c ****     rclc_node_init_default(&node, "cubemx_node", "", &support);
+ 121              		.loc 1 186 5 view .LVU25
+ 122 0060 0FAB     		add	r3, sp, #60
+ 123 0062 1C4A     		ldr	r2, .L8+36
+ 124 0064 1C49     		ldr	r1, .L8+40
+ 125 0066 08A8     		add	r0, sp, #32
+ 126 0068 FFF7FEFF 		bl	rclc_node_init_default
+ 127              	.LVL7:
+ 187:Core/Src/freertos.c **** 
+ 188:Core/Src/freertos.c ****     // create publisher
+ 189:Core/Src/freertos.c ****     rclc_publisher_init_default(
+ 128              		.loc 1 189 5 view .LVU26
+ 129 006c FFF7FEFF 		bl	rosidl_typesupport_c__get_message_type_support_handle__std_msgs__msg__Int32
+ 130              	.LVL8:
+ 131 0070 0246     		mov	r2, r0
+ 132 0072 1A4B     		ldr	r3, .L8+44
+ 133 0074 08A9     		add	r1, sp, #32
+ 134 0076 1EA8     		add	r0, sp, #120
+ 135 0078 FFF7FEFF 		bl	rclc_publisher_init_default
+ 136              	.LVL9:
+ 190:Core/Src/freertos.c ****             &publisher,
+ 191:Core/Src/freertos.c ****             &node,
+ 192:Core/Src/freertos.c ****             ROSIDL_GET_MSG_TYPE_SUPPORT(std_msgs, msg, Int32),
+ 193:Core/Src/freertos.c ****             "cube_node");
+ 194:Core/Src/freertos.c **** 
+ 195:Core/Src/freertos.c ****     msg.data = 0;
+ARM GAS  C:\Users\weiyi\AppData\Local\Temp\ccPAkyLi.s 			page 7
+
+
+ 137              		.loc 1 195 5 view .LVU27
+ 138              		.loc 1 195 14 is_stmt 0 view .LVU28
+ 139 007c 0023     		movs	r3, #0
+ 140 007e 1D93     		str	r3, [sp, #116]
+ 141 0080 0EE0     		b	.L4
+ 142              	.L6:
+ 169:Core/Src/freertos.c ****     }
+ 143              		.loc 1 169 9 is_stmt 1 view .LVU29
+ 144 0082 A921     		movs	r1, #169
+ 145 0084 1648     		ldr	r0, .L8+48
+ 146 0086 FFF7FEFF 		bl	printf
+ 147              	.LVL10:
+ 148 008a D4E7     		b	.L2
+ 149              	.LVL11:
+ 150              	.L7:
+ 151              	.LBB2:
+ 196:Core/Src/freertos.c **** 
+ 197:Core/Src/freertos.c ****     for(;;)
+ 198:Core/Src/freertos.c ****     {
+ 199:Core/Src/freertos.c ****         rcl_ret_t ret = rcl_publish(&publisher, &msg, NULL);
+ 200:Core/Src/freertos.c ****         if (ret != RCL_RET_OK)
+ 201:Core/Src/freertos.c ****         {
+ 202:Core/Src/freertos.c ****             printf("Error publishing (line %d)\n", __LINE__);
+ 152              		.loc 1 202 13 view .LVU30
+ 153 008c CA21     		movs	r1, #202
+ 154 008e 1548     		ldr	r0, .L8+52
+ 155              	.LVL12:
+ 156              		.loc 1 202 13 is_stmt 0 view .LVU31
+ 157 0090 FFF7FEFF 		bl	printf
+ 158              	.LVL13:
+ 159              	.L3:
+ 203:Core/Src/freertos.c ****         }
+ 204:Core/Src/freertos.c ****         msg.data++;
+ 160              		.loc 1 204 9 is_stmt 1 view .LVU32
+ 161              		.loc 1 204 12 is_stmt 0 view .LVU33
+ 162 0094 1D9B     		ldr	r3, [sp, #116]
+ 163              		.loc 1 204 17 view .LVU34
+ 164 0096 0133     		adds	r3, r3, #1
+ 165 0098 1D93     		str	r3, [sp, #116]
+ 205:Core/Src/freertos.c ****         osDelay(100);
+ 166              		.loc 1 205 9 is_stmt 1 view .LVU35
+ 167 009a 6420     		movs	r0, #100
+ 168 009c FFF7FEFF 		bl	osDelay
+ 169              	.LVL14:
+ 170              	.LBE2:
+ 197:Core/Src/freertos.c ****     {
+ 171              		.loc 1 197 10 view .LVU36
+ 172              	.L4:
+ 197:Core/Src/freertos.c ****     {
+ 173              		.loc 1 197 5 view .LVU37
+ 174              	.LBB3:
+ 199:Core/Src/freertos.c ****         if (ret != RCL_RET_OK)
+ 175              		.loc 1 199 9 view .LVU38
+ 199:Core/Src/freertos.c ****         if (ret != RCL_RET_OK)
+ 176              		.loc 1 199 25 is_stmt 0 view .LVU39
+ 177 00a0 0022     		movs	r2, #0
+ 178 00a2 1DA9     		add	r1, sp, #116
+ARM GAS  C:\Users\weiyi\AppData\Local\Temp\ccPAkyLi.s 			page 8
+
+
+ 179 00a4 1EA8     		add	r0, sp, #120
+ 180 00a6 FFF7FEFF 		bl	rcl_publish
+ 181              	.LVL15:
+ 200:Core/Src/freertos.c ****         {
+ 182              		.loc 1 200 9 is_stmt 1 view .LVU40
+ 200:Core/Src/freertos.c ****         {
+ 183              		.loc 1 200 12 is_stmt 0 view .LVU41
+ 184 00aa 0028     		cmp	r0, #0
+ 185 00ac EED1     		bne	.L7
+ 186 00ae F1E7     		b	.L3
+ 187              	.L9:
+ 188              		.align	2
+ 189              	.L8:
+ 190 00b0 00000000 		.word	cubemx_transport_read
+ 191 00b4 00000000 		.word	cubemx_transport_write
+ 192 00b8 00000000 		.word	cubemx_transport_close
+ 193 00bc 00000000 		.word	cubemx_transport_open
+ 194 00c0 00000000 		.word	huart1
+ 195 00c4 00000000 		.word	microros_allocate
+ 196 00c8 00000000 		.word	microros_deallocate
+ 197 00cc 00000000 		.word	microros_reallocate
+ 198 00d0 00000000 		.word	microros_zero_allocate
+ 199 00d4 28000000 		.word	.LC1
+ 200 00d8 2C000000 		.word	.LC2
+ 201 00dc 38000000 		.word	.LC3
+ 202 00e0 00000000 		.word	.LC0
+ 203 00e4 44000000 		.word	.LC4
+ 204              	.LBE3:
+ 205              		.cfi_endproc
+ 206              	.LFE74:
+ 208              		.section	.text.StartTask02,"ax",%progbits
+ 209              		.align	1
+ 210              		.global	StartTask02
+ 211              		.syntax unified
+ 212              		.thumb
+ 213              		.thumb_func
+ 214              		.fpu softvfp
+ 216              	StartTask02:
+ 217              	.LFB75:
+ 206:Core/Src/freertos.c ****     }
+ 207:Core/Src/freertos.c ****   /* USER CODE END StartDefaultTask */
+ 208:Core/Src/freertos.c **** }
+ 209:Core/Src/freertos.c **** 
+ 210:Core/Src/freertos.c **** /* USER CODE BEGIN Header_StartTask02 */
+ 211:Core/Src/freertos.c **** /**
+ 212:Core/Src/freertos.c **** * @brief Function implementing the LEDTask thread.
+ 213:Core/Src/freertos.c **** * @param argument: Not used
+ 214:Core/Src/freertos.c **** * @retval None
+ 215:Core/Src/freertos.c **** */
+ 216:Core/Src/freertos.c **** /* USER CODE END Header_StartTask02 */
+ 217:Core/Src/freertos.c **** void StartTask02(void *argument)
+ 218:Core/Src/freertos.c **** {
+ 218              		.loc 1 218 1 is_stmt 1 view -0
+ 219              		.cfi_startproc
+ 220              		@ Volatile: function does not return.
+ 221              		@ args = 0, pretend = 0, frame = 0
+ 222              		@ frame_needed = 0, uses_anonymous_args = 0
+ARM GAS  C:\Users\weiyi\AppData\Local\Temp\ccPAkyLi.s 			page 9
+
+
+ 223              	.LVL16:
+ 224              		.loc 1 218 1 is_stmt 0 view .LVU43
+ 225 0000 08B5     		push	{r3, lr}
+ 226              	.LCFI2:
+ 227              		.cfi_def_cfa_offset 8
+ 228              		.cfi_offset 3, -8
+ 229              		.cfi_offset 14, -4
+ 230              	.LVL17:
+ 231              	.L11:
+ 219:Core/Src/freertos.c ****   /* USER CODE BEGIN StartTask02 */
+ 220:Core/Src/freertos.c ****   /* Infinite loop */
+ 221:Core/Src/freertos.c ****   for(;;)
+ 232              		.loc 1 221 3 is_stmt 1 discriminator 1 view .LVU44
+ 222:Core/Src/freertos.c ****   {
+ 223:Core/Src/freertos.c ****       osDelay(500);
+ 233              		.loc 1 223 7 discriminator 1 view .LVU45
+ 234 0002 4FF4FA70 		mov	r0, #500
+ 235 0006 FFF7FEFF 		bl	osDelay
+ 236              	.LVL18:
+ 224:Core/Src/freertos.c ****       HAL_GPIO_WritePin(GPIOA,GPIO_PIN_8,GPIO_PIN_SET);
+ 237              		.loc 1 224 7 discriminator 1 view .LVU46
+ 238 000a 094C     		ldr	r4, .L13
+ 239 000c 0122     		movs	r2, #1
+ 240 000e 4FF48071 		mov	r1, #256
+ 241 0012 2046     		mov	r0, r4
+ 242 0014 FFF7FEFF 		bl	HAL_GPIO_WritePin
+ 243              	.LVL19:
+ 225:Core/Src/freertos.c ****       osDelay(500);
+ 244              		.loc 1 225 7 discriminator 1 view .LVU47
+ 245 0018 4FF4FA70 		mov	r0, #500
+ 246 001c FFF7FEFF 		bl	osDelay
+ 247              	.LVL20:
+ 226:Core/Src/freertos.c ****       HAL_GPIO_WritePin(GPIOA,GPIO_PIN_8,GPIO_PIN_RESET);
+ 248              		.loc 1 226 7 discriminator 1 view .LVU48
+ 249 0020 0022     		movs	r2, #0
+ 250 0022 4FF48071 		mov	r1, #256
+ 251 0026 2046     		mov	r0, r4
+ 252 0028 FFF7FEFF 		bl	HAL_GPIO_WritePin
+ 253              	.LVL21:
+ 221:Core/Src/freertos.c ****   {
+ 254              		.loc 1 221 8 discriminator 1 view .LVU49
+ 255 002c E9E7     		b	.L11
+ 256              	.L14:
+ 257 002e 00BF     		.align	2
+ 258              	.L13:
+ 259 0030 00080140 		.word	1073809408
+ 260              		.cfi_endproc
+ 261              	.LFE75:
+ 263              		.section	.text.MX_FREERTOS_Init,"ax",%progbits
+ 264              		.align	1
+ 265              		.global	MX_FREERTOS_Init
+ 266              		.syntax unified
+ 267              		.thumb
+ 268              		.thumb_func
+ 269              		.fpu softvfp
+ 271              	MX_FREERTOS_Init:
+ 272              	.LFB73:
+ARM GAS  C:\Users\weiyi\AppData\Local\Temp\ccPAkyLi.s 			page 10
+
+
+ 103:Core/Src/freertos.c ****   /* USER CODE BEGIN Init */
+ 273              		.loc 1 103 29 view -0
+ 274              		.cfi_startproc
+ 275              		@ args = 0, pretend = 0, frame = 0
+ 276              		@ frame_needed = 0, uses_anonymous_args = 0
+ 277 0000 08B5     		push	{r3, lr}
+ 278              	.LCFI3:
+ 279              		.cfi_def_cfa_offset 8
+ 280              		.cfi_offset 3, -8
+ 281              		.cfi_offset 14, -4
+ 126:Core/Src/freertos.c **** 
+ 282              		.loc 1 126 3 view .LVU51
+ 126:Core/Src/freertos.c **** 
+ 283              		.loc 1 126 23 is_stmt 0 view .LVU52
+ 284 0002 074A     		ldr	r2, .L17
+ 285 0004 0021     		movs	r1, #0
+ 286 0006 0748     		ldr	r0, .L17+4
+ 287 0008 FFF7FEFF 		bl	osThreadNew
+ 288              	.LVL22:
+ 126:Core/Src/freertos.c **** 
+ 289              		.loc 1 126 21 view .LVU53
+ 290 000c 064B     		ldr	r3, .L17+8
+ 291 000e 1860     		str	r0, [r3]
+ 129:Core/Src/freertos.c **** 
+ 292              		.loc 1 129 3 is_stmt 1 view .LVU54
+ 129:Core/Src/freertos.c **** 
+ 293              		.loc 1 129 19 is_stmt 0 view .LVU55
+ 294 0010 064A     		ldr	r2, .L17+12
+ 295 0012 0021     		movs	r1, #0
+ 296 0014 0648     		ldr	r0, .L17+16
+ 297 0016 FFF7FEFF 		bl	osThreadNew
+ 298              	.LVL23:
+ 129:Core/Src/freertos.c **** 
+ 299              		.loc 1 129 17 view .LVU56
+ 300 001a 064B     		ldr	r3, .L17+20
+ 301 001c 1860     		str	r0, [r3]
+ 139:Core/Src/freertos.c **** 
+ 302              		.loc 1 139 1 view .LVU57
+ 303 001e 08BD     		pop	{r3, pc}
+ 304              	.L18:
+ 305              		.align	2
+ 306              	.L17:
+ 307 0020 00000000 		.word	.LANCHOR0
+ 308 0024 00000000 		.word	StartDefaultTask
+ 309 0028 00000000 		.word	.LANCHOR1
+ 310 002c 00000000 		.word	.LANCHOR2
+ 311 0030 00000000 		.word	StartTask02
+ 312 0034 00000000 		.word	.LANCHOR3
+ 313              		.cfi_endproc
+ 314              	.LFE73:
+ 316              		.global	LEDTask_attributes
+ 317              		.section	.rodata.str1.4,"aMS",%progbits,1
+ 318              		.align	2
+ 319              	.LC5:
+ 320 0000 4C454454 		.ascii	"LEDTask\000"
+ 320      61736B00 
+ 321              		.global	LEDTaskHandle
+ARM GAS  C:\Users\weiyi\AppData\Local\Temp\ccPAkyLi.s 			page 11
+
+
+ 322              		.global	defaultTask_attributes
+ 323              		.align	2
+ 324              	.LC6:
+ 325 0008 64656661 		.ascii	"defaultTask\000"
+ 325      756C7454 
+ 325      61736B00 
+ 326              		.global	defaultTaskControlBlock
+ 327              		.global	defaultTaskBuffer
+ 328              		.global	defaultTaskHandle
+ 329              		.section	.bss.LEDTaskHandle,"aw",%nobits
+ 330              		.align	2
+ 331              		.set	.LANCHOR3,. + 0
+ 334              	LEDTaskHandle:
+ 335 0000 00000000 		.space	4
+ 336              		.section	.bss.defaultTaskBuffer,"aw",%nobits
+ 337              		.align	2
+ 340              	defaultTaskBuffer:
+ 341 0000 00000000 		.space	12000
+ 341      00000000 
+ 341      00000000 
+ 341      00000000 
+ 341      00000000 
+ 342              		.section	.bss.defaultTaskControlBlock,"aw",%nobits
+ 343              		.align	2
+ 346              	defaultTaskControlBlock:
+ 347 0000 00000000 		.space	92
+ 347      00000000 
+ 347      00000000 
+ 347      00000000 
+ 347      00000000 
+ 348              		.section	.bss.defaultTaskHandle,"aw",%nobits
+ 349              		.align	2
+ 350              		.set	.LANCHOR1,. + 0
+ 353              	defaultTaskHandle:
+ 354 0000 00000000 		.space	4
+ 355              		.section	.rodata.LEDTask_attributes,"a"
+ 356              		.align	2
+ 357              		.set	.LANCHOR2,. + 0
+ 360              	LEDTask_attributes:
+ 361 0000 00000000 		.word	.LC5
+ 362 0004 00000000 		.space	16
+ 362      00000000 
+ 362      00000000 
+ 362      00000000 
+ 363 0014 00020000 		.word	512
+ 364 0018 08000000 		.word	8
+ 365 001c 00000000 		.space	8
+ 365      00000000 
+ 366              		.section	.rodata.defaultTask_attributes,"a"
+ 367              		.align	2
+ 368              		.set	.LANCHOR0,. + 0
+ 371              	defaultTask_attributes:
+ 372 0000 08000000 		.word	.LC6
+ 373 0004 00000000 		.space	4
+ 374 0008 00000000 		.word	defaultTaskControlBlock
+ 375 000c 5C000000 		.word	92
+ 376 0010 00000000 		.word	defaultTaskBuffer
+ARM GAS  C:\Users\weiyi\AppData\Local\Temp\ccPAkyLi.s 			page 12
+
+
+ 377 0014 E02E0000 		.word	12000
+ 378 0018 18000000 		.word	24
+ 379 001c 00000000 		.space	8
+ 379      00000000 
+ 380              		.text
+ 381              	.Letext0:
+ 382              		.file 2 "d:\\clion\\gcc-arm-none-eabi-10.3-2021.07-win32\\gcc-arm-none-eabi-10.3-2021.07\\lib\\gcc
+ 383              		.file 3 "d:\\clion\\gcc-arm-none-eabi-10.3-2021.07-win32\\gcc-arm-none-eabi-10.3-2021.07\\arm-none
+ 384              		.file 4 "d:\\clion\\gcc-arm-none-eabi-10.3-2021.07-win32\\gcc-arm-none-eabi-10.3-2021.07\\arm-none
+ 385              		.file 5 "Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3/portmacro.h"
+ 386              		.file 6 "Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h"
+ 387              		.file 7 "Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xe.h"
+ 388              		.file 8 "Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h"
+ 389              		.file 9 "Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h"
+ 390              		.file 10 "Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h"
+ 391              		.file 11 "Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h"
+ 392              		.file 12 "Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.h"
+ 393              		.file 13 "micro_ros_stm32cubemx_utils/microros_static_library/libmicroros/microros_include/rcutils
+ 394              		.file 14 "micro_ros_stm32cubemx_utils/microros_static_library/libmicroros/microros_include/rcl/all
+ 395              		.file 15 "micro_ros_stm32cubemx_utils/microros_static_library/libmicroros/microros_include/rmw/ret
+ 396              		.file 16 "micro_ros_stm32cubemx_utils/microros_static_library/libmicroros/microros_include/rcutils
+ 397              		.file 17 "micro_ros_stm32cubemx_utils/microros_static_library/libmicroros/microros_include/rmw/typ
+ 398              		.file 18 "micro_ros_stm32cubemx_utils/microros_static_library/libmicroros/microros_include/rcl/typ
+ 399              		.file 19 "micro_ros_stm32cubemx_utils/microros_static_library/libmicroros/microros_include/rcl/ini
+ 400              		.file 20 "micro_ros_stm32cubemx_utils/microros_static_library/libmicroros/microros_include/rcl/con
+ 401              		.file 21 "micro_ros_stm32cubemx_utils/microros_static_library/libmicroros/microros_include/rcl/nod
+ 402              		.file 22 "micro_ros_stm32cubemx_utils/microros_static_library/libmicroros/microros_include/rcl/pub
+ 403              		.file 23 "micro_ros_stm32cubemx_utils/microros_static_library/libmicroros/microros_include/rcl/tim
+ 404              		.file 24 "micro_ros_stm32cubemx_utils/microros_static_library/libmicroros/microros_include/rmw/qos
+ 405              		.file 25 "micro_ros_stm32cubemx_utils/microros_static_library/libmicroros/microros_include/rclc/ty
+ 406              		.file 26 "micro_ros_stm32cubemx_utils/microros_static_library/libmicroros/microros_include/std_msg
+ 407              		.file 27 "Core/Inc/usart.h"
+ 408              		.file 28 "d:\\clion\\gcc-arm-none-eabi-10.3-2021.07-win32\\gcc-arm-none-eabi-10.3-2021.07\\arm-non
+ 409              		.file 29 "micro_ros_stm32cubemx_utils/microros_static_library/libmicroros/microros_include/rmw_mic
+ 410              		.file 30 "micro_ros_stm32cubemx_utils/microros_static_library/libmicroros/microros_include/rclc/in
+ 411              		.file 31 "micro_ros_stm32cubemx_utils/microros_static_library/libmicroros/microros_include/rclc/no
+ 412              		.file 32 "micro_ros_stm32cubemx_utils/microros_static_library/libmicroros/microros_include/std_msg
+ 413              		.file 33 "micro_ros_stm32cubemx_utils/microros_static_library/libmicroros/microros_include/rclc/pu
+ARM GAS  C:\Users\weiyi\AppData\Local\Temp\ccPAkyLi.s 			page 13
+
+
+DEFINED SYMBOLS
+                            *ABS*:00000000 freertos.c
+C:\Users\weiyi\AppData\Local\Temp\ccPAkyLi.s:16     .rodata.StartDefaultTask.str1.4:00000000 $d
+C:\Users\weiyi\AppData\Local\Temp\ccPAkyLi.s:32     .text.StartDefaultTask:00000000 $t
+C:\Users\weiyi\AppData\Local\Temp\ccPAkyLi.s:40     .text.StartDefaultTask:00000000 StartDefaultTask
+C:\Users\weiyi\AppData\Local\Temp\ccPAkyLi.s:190    .text.StartDefaultTask:000000b0 $d
+C:\Users\weiyi\AppData\Local\Temp\ccPAkyLi.s:209    .text.StartTask02:00000000 $t
+C:\Users\weiyi\AppData\Local\Temp\ccPAkyLi.s:216    .text.StartTask02:00000000 StartTask02
+C:\Users\weiyi\AppData\Local\Temp\ccPAkyLi.s:259    .text.StartTask02:00000030 $d
+C:\Users\weiyi\AppData\Local\Temp\ccPAkyLi.s:264    .text.MX_FREERTOS_Init:00000000 $t
+C:\Users\weiyi\AppData\Local\Temp\ccPAkyLi.s:271    .text.MX_FREERTOS_Init:00000000 MX_FREERTOS_Init
+C:\Users\weiyi\AppData\Local\Temp\ccPAkyLi.s:307    .text.MX_FREERTOS_Init:00000020 $d
+C:\Users\weiyi\AppData\Local\Temp\ccPAkyLi.s:360    .rodata.LEDTask_attributes:00000000 LEDTask_attributes
+C:\Users\weiyi\AppData\Local\Temp\ccPAkyLi.s:318    .rodata.str1.4:00000000 $d
+C:\Users\weiyi\AppData\Local\Temp\ccPAkyLi.s:334    .bss.LEDTaskHandle:00000000 LEDTaskHandle
+C:\Users\weiyi\AppData\Local\Temp\ccPAkyLi.s:371    .rodata.defaultTask_attributes:00000000 defaultTask_attributes
+C:\Users\weiyi\AppData\Local\Temp\ccPAkyLi.s:346    .bss.defaultTaskControlBlock:00000000 defaultTaskControlBlock
+C:\Users\weiyi\AppData\Local\Temp\ccPAkyLi.s:340    .bss.defaultTaskBuffer:00000000 defaultTaskBuffer
+C:\Users\weiyi\AppData\Local\Temp\ccPAkyLi.s:353    .bss.defaultTaskHandle:00000000 defaultTaskHandle
+C:\Users\weiyi\AppData\Local\Temp\ccPAkyLi.s:330    .bss.LEDTaskHandle:00000000 $d
+C:\Users\weiyi\AppData\Local\Temp\ccPAkyLi.s:337    .bss.defaultTaskBuffer:00000000 $d
+C:\Users\weiyi\AppData\Local\Temp\ccPAkyLi.s:343    .bss.defaultTaskControlBlock:00000000 $d
+C:\Users\weiyi\AppData\Local\Temp\ccPAkyLi.s:349    .bss.defaultTaskHandle:00000000 $d
+C:\Users\weiyi\AppData\Local\Temp\ccPAkyLi.s:356    .rodata.LEDTask_attributes:00000000 $d
+C:\Users\weiyi\AppData\Local\Temp\ccPAkyLi.s:367    .rodata.defaultTask_attributes:00000000 $d
+
+UNDEFINED SYMBOLS
+rmw_uros_set_custom_transport
+rcutils_get_zero_initialized_allocator
+rcutils_set_default_allocator
+rcutils_get_default_allocator
+rclc_support_init
+rclc_node_init_default
+rosidl_typesupport_c__get_message_type_support_handle__std_msgs__msg__Int32
+rclc_publisher_init_default
+printf
+osDelay
+rcl_publish
+cubemx_transport_read
+cubemx_transport_write
+cubemx_transport_close
+cubemx_transport_open
+huart1
+microros_allocate
+microros_deallocate
+microros_reallocate
+microros_zero_allocate
+HAL_GPIO_WritePin
+osThreadNew

@@ -1,0 +1,10 @@
+/home/orangepi/microros2pc_test/build/microros2pc_test_cpp/CMakeFiles/install/strip.dir
+/home/orangepi/microros2pc_test/build/microros2pc_test_cpp/CMakeFiles/install/local.dir
+/home/orangepi/microros2pc_test/build/microros2pc_test_cpp/CMakeFiles/install.dir
+/home/orangepi/microros2pc_test/build/microros2pc_test_cpp/CMakeFiles/list_install_components.dir
+/home/orangepi/microros2pc_test/build/microros2pc_test_cpp/CMakeFiles/rebuild_cache.dir
+/home/orangepi/microros2pc_test/build/microros2pc_test_cpp/CMakeFiles/edit_cache.dir
+/home/orangepi/microros2pc_test/build/microros2pc_test_cpp/CMakeFiles/test.dir
+/home/orangepi/microros2pc_test/build/microros2pc_test_cpp/CMakeFiles/microros2pc_test.dir
+/home/orangepi/microros2pc_test/build/microros2pc_test_cpp/CMakeFiles/microros2pc_test_cpp_uninstall.dir
+/home/orangepi/microros2pc_test/build/microros2pc_test_cpp/CMakeFiles/uninstall.dir

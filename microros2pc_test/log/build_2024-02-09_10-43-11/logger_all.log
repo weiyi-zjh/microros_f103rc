@@ -1,0 +1,123 @@
+[2.340s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[2.340s] DEBUG:colcon:Parsed command line arguments: Namespace(ament_cmake_args=None, base_paths=['.'], build_base='build', catkin_cmake_args=None, catkin_skip_building_tests=False, cmake_args=None, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, cmake_target=None, cmake_target_skip_unavailable=False, continue_on_error=False, event_handlers=None, executor='parallel', ignore_user_meta=False, install_base='install', log_base=None, log_level=None, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7f969cbc40>>, merge_install=False, metas=['./colcon.meta'], packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_end=None, packages_ignore=None, packages_ignore_regex=None, packages_select=None, packages_select_build_failed=False, packages_select_by_dep=None, packages_select_regex=None, packages_select_test_failures=False, packages_skip=None, packages_skip_build_finished=False, packages_skip_by_dep=None, packages_skip_regex=None, packages_skip_test_passed=False, packages_skip_up_to=None, packages_start=None, packages_up_to=None, packages_up_to_regex=None, parallel_workers=8, paths=None, symlink_install=False, test_result_base=None, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7f969cbc40>, verb_name='build', verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7f965917f0>)
+[2.450s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[2.450s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[2.450s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[2.450s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[2.451s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[2.451s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[2.451s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/orangepi/microros2pc_test'
+[2.451s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[2.451s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[2.451s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[2.451s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[2.451s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[2.451s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[2.451s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[2.451s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[2.451s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[2.466s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[2.467s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[2.467s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[2.467s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[2.467s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[2.467s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[2.467s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[2.467s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[2.467s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[2.467s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[2.468s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[2.468s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[2.468s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[2.468s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[2.468s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[2.468s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[2.468s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[2.468s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[2.468s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[2.468s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[2.468s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[2.468s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[2.468s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[2.468s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[2.468s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[2.469s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[2.469s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[2.469s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[2.469s] Level 1:colcon.colcon_core.package_identification:_identify(src/microros_to_pc_py) by extensions ['ignore', 'ignore_ament_install']
+[2.469s] Level 1:colcon.colcon_core.package_identification:_identify(src/microros_to_pc_py) by extension 'ignore'
+[2.469s] Level 1:colcon.colcon_core.package_identification:_identify(src/microros_to_pc_py) by extension 'ignore_ament_install'
+[2.469s] Level 1:colcon.colcon_core.package_identification:_identify(src/microros_to_pc_py) by extensions ['colcon_pkg']
+[2.469s] Level 1:colcon.colcon_core.package_identification:_identify(src/microros_to_pc_py) by extension 'colcon_pkg'
+[2.469s] Level 1:colcon.colcon_core.package_identification:_identify(src/microros_to_pc_py) by extensions ['colcon_meta']
+[2.469s] Level 1:colcon.colcon_core.package_identification:_identify(src/microros_to_pc_py) by extension 'colcon_meta'
+[2.469s] Level 1:colcon.colcon_core.package_identification:_identify(src/microros_to_pc_py) by extensions ['ros']
+[2.469s] Level 1:colcon.colcon_core.package_identification:_identify(src/microros_to_pc_py) by extension 'ros'
+[2.473s] DEBUG:colcon.colcon_core.package_identification:Package 'src/microros_to_pc_py' with type 'ros.ament_python' and name 'microros_to_pc_py'
+[2.473s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[2.473s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[2.473s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[2.473s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[2.473s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[2.651s] Level 5:colcon.colcon_core.verb:set package 'microros_to_pc_py' build argument 'cmake_args' from command line to 'None'
+[2.651s] Level 5:colcon.colcon_core.verb:set package 'microros_to_pc_py' build argument 'cmake_target' from command line to 'None'
+[2.651s] Level 5:colcon.colcon_core.verb:set package 'microros_to_pc_py' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.651s] Level 5:colcon.colcon_core.verb:set package 'microros_to_pc_py' build argument 'cmake_clean_cache' from command line to 'False'
+[2.651s] Level 5:colcon.colcon_core.verb:set package 'microros_to_pc_py' build argument 'cmake_clean_first' from command line to 'False'
+[2.651s] Level 5:colcon.colcon_core.verb:set package 'microros_to_pc_py' build argument 'cmake_force_configure' from command line to 'False'
+[2.651s] Level 5:colcon.colcon_core.verb:set package 'microros_to_pc_py' build argument 'ament_cmake_args' from command line to 'None'
+[2.651s] Level 5:colcon.colcon_core.verb:set package 'microros_to_pc_py' build argument 'catkin_cmake_args' from command line to 'None'
+[2.651s] Level 5:colcon.colcon_core.verb:set package 'microros_to_pc_py' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.651s] DEBUG:colcon.colcon_core.verb:Building package 'microros_to_pc_py' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/orangepi/microros2pc_test/build/microros_to_pc_py', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/orangepi/microros2pc_test/install/microros_to_pc_py', 'merge_install': False, 'path': '/home/orangepi/microros2pc_test/src/microros_to_pc_py', 'symlink_install': False, 'test_result_base': None}
+[2.690s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[2.729s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[2.730s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/orangepi/microros2pc_test/src/microros_to_pc_py' with build type 'ament_python'
+[2.730s] Level 1:colcon.colcon_core.shell:create_environment_hook('microros_to_pc_py', 'ament_prefix_path')
+[2.771s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[2.771s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/orangepi/microros2pc_test/install/microros_to_pc_py/share/microros_to_pc_py/hook/ament_prefix_path.ps1'
+[2.772s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/orangepi/microros2pc_test/install/microros_to_pc_py/share/microros_to_pc_py/hook/ament_prefix_path.dsv'
+[2.773s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/orangepi/microros2pc_test/install/microros_to_pc_py/share/microros_to_pc_py/hook/ament_prefix_path.sh'
+[2.830s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.830s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.219s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/orangepi/microros2pc_test/src/microros_to_pc_py'
+[3.264s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[3.264s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[4.203s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/orangepi/microros2pc_test/src/microros_to_pc_py': PYTHONPATH=/home/orangepi/microros2pc_test/build/microros_to_pc_py/prefix_override:/home/orangepi/microros2pc_test/install/microros_to_pc_py/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/microros_to_pc_py build --build-base /home/orangepi/microros2pc_test/build/microros_to_pc_py/build install --record /home/orangepi/microros2pc_test/build/microros_to_pc_py/install.log --install-scripts $base/lib/microros_to_pc_py --single-version-externally-managed
+[4.642s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/orangepi/microros2pc_test/src/microros_to_pc_py' returned '0': PYTHONPATH=/home/orangepi/microros2pc_test/build/microros_to_pc_py/prefix_override:/home/orangepi/microros2pc_test/install/microros_to_pc_py/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/microros_to_pc_py build --build-base /home/orangepi/microros2pc_test/build/microros_to_pc_py/build install --record /home/orangepi/microros2pc_test/build/microros_to_pc_py/install.log --install-scripts $base/lib/microros_to_pc_py --single-version-externally-managed
+[4.743s] Level 1:colcon.colcon_core.environment:checking '/home/orangepi/microros2pc_test/install/microros_to_pc_py' for CMake module files
+[4.743s] Level 1:colcon.colcon_core.environment:checking '/home/orangepi/microros2pc_test/install/microros_to_pc_py' for CMake config files
+[4.744s] Level 1:colcon.colcon_core.environment:checking '/home/orangepi/microros2pc_test/install/microros_to_pc_py/lib'
+[4.745s] Level 1:colcon.colcon_core.environment:checking '/home/orangepi/microros2pc_test/install/microros_to_pc_py/bin'
+[4.745s] Level 1:colcon.colcon_core.environment:checking '/home/orangepi/microros2pc_test/install/microros_to_pc_py/lib/pkgconfig/microros_to_pc_py.pc'
+[4.745s] Level 1:colcon.colcon_core.environment:checking '/home/orangepi/microros2pc_test/install/microros_to_pc_py/lib/python3.8/site-packages'
+[4.745s] Level 1:colcon.colcon_core.shell:create_environment_hook('microros_to_pc_py', 'pythonpath')
+[4.790s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/orangepi/microros2pc_test/install/microros_to_pc_py/share/microros_to_pc_py/hook/pythonpath.ps1'
+[4.791s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/orangepi/microros2pc_test/install/microros_to_pc_py/share/microros_to_pc_py/hook/pythonpath.dsv'
+[4.791s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/orangepi/microros2pc_test/install/microros_to_pc_py/share/microros_to_pc_py/hook/pythonpath.sh'
+[4.792s] Level 1:colcon.colcon_core.environment:checking '/home/orangepi/microros2pc_test/install/microros_to_pc_py/bin'
+[4.792s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(microros_to_pc_py)
+[4.831s] INFO:colcon.colcon_core.shell:Creating package script '/home/orangepi/microros2pc_test/install/microros_to_pc_py/share/microros_to_pc_py/package.ps1'
+[4.833s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/orangepi/microros2pc_test/install/microros_to_pc_py/share/microros_to_pc_py/package.dsv'
+[4.834s] INFO:colcon.colcon_core.shell:Creating package script '/home/orangepi/microros2pc_test/install/microros_to_pc_py/share/microros_to_pc_py/package.sh'
+[4.835s] INFO:colcon.colcon_core.shell:Creating package script '/home/orangepi/microros2pc_test/install/microros_to_pc_py/share/microros_to_pc_py/package.bash'
+[4.836s] INFO:colcon.colcon_core.shell:Creating package script '/home/orangepi/microros2pc_test/install/microros_to_pc_py/share/microros_to_pc_py/package.zsh'
+[4.837s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/orangepi/microros2pc_test/install/microros_to_pc_py/share/colcon-core/packages/microros_to_pc_py)
+[4.838s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[4.838s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[4.838s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[4.838s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[4.935s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[4.936s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[4.936s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[29.962s] DEBUG:colcon.colcon_notification.desktop_notification.notify2:Failed to initialize notify2: org.freedesktop.DBus.Error.NoReply: Did not receive a reply. Possible causes include: the remote application did not send a reply, the message bus security policy blocked the reply, the reply timeout expired, or the network connection was broken.
+[29.963s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[30.025s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/orangepi/microros2pc_test/install/local_setup.ps1'
+[30.027s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/orangepi/microros2pc_test/install/_local_setup_util_ps1.py'
+[30.029s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/orangepi/microros2pc_test/install/setup.ps1'
+[30.069s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/orangepi/microros2pc_test/install/local_setup.sh'
+[30.070s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/orangepi/microros2pc_test/install/_local_setup_util_sh.py'
+[30.072s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/orangepi/microros2pc_test/install/setup.sh'
+[30.111s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/orangepi/microros2pc_test/install/local_setup.bash'
+[30.113s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/orangepi/microros2pc_test/install/setup.bash'
+[30.154s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/orangepi/microros2pc_test/install/local_setup.zsh'
+[30.156s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/orangepi/microros2pc_test/install/setup.zsh'

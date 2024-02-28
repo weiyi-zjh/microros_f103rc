@@ -1,0 +1,10 @@
+[0.342s] Invoking command in '/home/orangepi/microros2pc_test/build/microros2pc_test_cpp': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/orangepi/microros2pc_test/build/microros2pc_test_cpp -- -j8 -l8
+[0.389s] make: Warning: File 'Makefile' has modification time 1013 s in the future
+[0.452s] make[1]: Warning: File 'CMakeFiles/Makefile2' has modification time 1012 s in the future
+[0.459s] make[2]: Warning: File 'CMakeFiles/microros2pc_test.dir/flags.make' has modification time 1012 s in the future
+[0.501s] make[2]: warning:  Clock skew detected.  Your build may be incomplete.
+[0.509s] make[2]: Warning: File 'CMakeFiles/microros2pc_test.dir/flags.make' has modification time 1012 s in the future
+[0.528s] make[2]: warning:  Clock skew detected.  Your build may be incomplete.
+[0.559s] [100%] Built target microros2pc_test
+[0.565s] make[1]: warning:  Clock skew detected.  Your build may be incomplete.
+[0.598s] make: warning:  Clock skew detected.  Your build may be incomplete.

@@ -1,0 +1,62 @@
+[0.000000] (-) TimerEvent: {}
+[0.000855] (microros_to_pc_py) JobQueued: {'identifier': 'microros_to_pc_py', 'dependencies': OrderedDict()}
+[0.000977] (microros_to_pc_py) JobStarted: {'identifier': 'microros_to_pc_py'}
+[0.100510] (-) TimerEvent: {}
+[0.201269] (-) TimerEvent: {}
+[0.302321] (-) TimerEvent: {}
+[0.403060] (-) TimerEvent: {}
+[0.504020] (-) TimerEvent: {}
+[0.605653] (-) TimerEvent: {}
+[0.707243] (-) TimerEvent: {}
+[0.808199] (-) TimerEvent: {}
+[0.908881] (-) TimerEvent: {}
+[1.009532] (-) TimerEvent: {}
+[1.110372] (-) TimerEvent: {}
+[1.211089] (-) TimerEvent: {}
+[1.311854] (-) TimerEvent: {}
+[1.412665] (-) TimerEvent: {}
+[1.469295] (microros_to_pc_py) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../../build/microros_to_pc_py', 'build', '--build-base', '/home/orangepi/microros2pc_test/build/microros_to_pc_py/build', 'install', '--record', '/home/orangepi/microros2pc_test/build/microros_to_pc_py/install.log', '--install-scripts', '$base/lib/microros_to_pc_py', '--single-version-externally-managed'], 'cwd': '/home/orangepi/microros2pc_test/src/microros_to_pc_py', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'UMS_MOUNTPOINT': '/mnt/ums', 'MAIL': '/var/mail/orangepi', 'GST_V4L2_PREFERRED_FOURCC': 'NV12:YU12:NV16:YUY2', 'LANGUAGE': 'en_US.UTF-8', 'USER': 'orangepi', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'USB_FUNCS': 'adb', 'LD_LIBRARY_PATH': '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib', 'MOTD_SHOWN': 'pam', 'HOME': '/home/orangepi', 'OLDPWD': '/home/orangepi/microros2pc_test/src', 'GST_INSPECT_NO_COLORS': '1', 'HUSHLOGIN': 'FALSE', 'GST_MPP_NO_RGA': '1', 'ROS_PYTHON_VERSION': '3', 'COGL_DRIVER': 'gles2', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'GST_V4L2SRC_MAX_RESOLUTION': '3840x2160', 'ROS_DISTRO': 'foxy', 'LOGNAME': 'orangepi', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'linux', 'GST_GL_API': 'gles2', 'XDG_SESSION_ID': '3', 'GST_VIDEO_CONVERT_PREFERRED_FORMAT': 'NV12:NV16:I420:YUY2', 'GST_V4L2SRC_RK_DEVICES': '_mainpath:_selfpath:_bypass:_scale', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'GST_GL_PLATFORM': 'egl', 'GST_DEBUG_NO_COLOR': '1', 'GST_V4L2SRC_DEFAULT_DEVICE': '/dev/video-camera0', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GST_V4L2_USE_LIBV4L2': '1', 'UMS_SIZE': '256M', 'AMENT_PREFIX_PATH': '/opt/ros/foxy', 'LC_MESSAGES': 'en_US.UTF-8', 'SHELL': '/bin/bash', 'UMS_RO': '0', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'UMS_FSTYPE': 'vfat', 'PWD': '/home/orangepi/microros2pc_test/build/microros_to_pc_py', 'LC_ALL': 'en_US.UTF-8', 'PYTHONPATH': '/home/orangepi/microros2pc_test/build/microros_to_pc_py/prefix_override:/home/orangepi/microros2pc_test/install/microros_to_pc_py/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages', 'UMS_MOUNT': '0', 'COLCON': '1', 'UMS_FILE': '/userdata/ums_shared.img'}, 'shell': False}
+[1.512949] (-) TimerEvent: {}
+[1.613848] (-) TimerEvent: {}
+[1.714614] (-) TimerEvent: {}
+[1.770953] (microros_to_pc_py) StdoutLine: {'line': b'running egg_info\n'}
+[1.772079] (microros_to_pc_py) StdoutLine: {'line': b'creating ../../build/microros_to_pc_py/microros_to_pc_py.egg-info\n'}
+[1.772881] (microros_to_pc_py) StdoutLine: {'line': b'writing ../../build/microros_to_pc_py/microros_to_pc_py.egg-info/PKG-INFO\n'}
+[1.773412] (microros_to_pc_py) StdoutLine: {'line': b'writing dependency_links to ../../build/microros_to_pc_py/microros_to_pc_py.egg-info/dependency_links.txt\n'}
+[1.773930] (microros_to_pc_py) StdoutLine: {'line': b'writing entry points to ../../build/microros_to_pc_py/microros_to_pc_py.egg-info/entry_points.txt\n'}
+[1.774392] (microros_to_pc_py) StdoutLine: {'line': b'writing requirements to ../../build/microros_to_pc_py/microros_to_pc_py.egg-info/requires.txt\n'}
+[1.774819] (microros_to_pc_py) StdoutLine: {'line': b'writing top-level names to ../../build/microros_to_pc_py/microros_to_pc_py.egg-info/top_level.txt\n'}
+[1.777453] (microros_to_pc_py) StdoutLine: {'line': b"writing manifest file '../../build/microros_to_pc_py/microros_to_pc_py.egg-info/SOURCES.txt'\n"}
+[1.814873] (-) TimerEvent: {}
+[1.819491] (microros_to_pc_py) StdoutLine: {'line': b"reading manifest file '../../build/microros_to_pc_py/microros_to_pc_py.egg-info/SOURCES.txt'\n"}
+[1.820401] (microros_to_pc_py) StdoutLine: {'line': b"writing manifest file '../../build/microros_to_pc_py/microros_to_pc_py.egg-info/SOURCES.txt'\n"}
+[1.821174] (microros_to_pc_py) StdoutLine: {'line': b'running build\n'}
+[1.821806] (microros_to_pc_py) StdoutLine: {'line': b'running build_py\n'}
+[1.822303] (microros_to_pc_py) StdoutLine: {'line': b'creating /home/orangepi/microros2pc_test/build/microros_to_pc_py/build\n'}
+[1.822983] (microros_to_pc_py) StdoutLine: {'line': b'creating /home/orangepi/microros2pc_test/build/microros_to_pc_py/build/lib\n'}
+[1.823454] (microros_to_pc_py) StdoutLine: {'line': b'creating /home/orangepi/microros2pc_test/build/microros_to_pc_py/build/lib/microros_to_pc_py\n'}
+[1.823903] (microros_to_pc_py) StdoutLine: {'line': b'copying microros_to_pc_py/__init__.py -> /home/orangepi/microros2pc_test/build/microros_to_pc_py/build/lib/microros_to_pc_py\n'}
+[1.824555] (microros_to_pc_py) StdoutLine: {'line': b'copying microros_to_pc_py/microros_to_pc_sub.py -> /home/orangepi/microros2pc_test/build/microros_to_pc_py/build/lib/microros_to_pc_py\n'}
+[1.825078] (microros_to_pc_py) StdoutLine: {'line': b'running install\n'}
+[1.825497] (microros_to_pc_py) StdoutLine: {'line': b'running install_lib\n'}
+[1.825885] (microros_to_pc_py) StdoutLine: {'line': b'creating /home/orangepi/microros2pc_test/install/microros_to_pc_py/lib/python3.8/site-packages/microros_to_pc_py\n'}
+[1.826268] (microros_to_pc_py) StdoutLine: {'line': b'copying /home/orangepi/microros2pc_test/build/microros_to_pc_py/build/lib/microros_to_pc_py/__init__.py -> /home/orangepi/microros2pc_test/install/microros_to_pc_py/lib/python3.8/site-packages/microros_to_pc_py\n'}
+[1.826774] (microros_to_pc_py) StdoutLine: {'line': b'copying /home/orangepi/microros2pc_test/build/microros_to_pc_py/build/lib/microros_to_pc_py/microros_to_pc_sub.py -> /home/orangepi/microros2pc_test/install/microros_to_pc_py/lib/python3.8/site-packages/microros_to_pc_py\n'}
+[1.827269] (microros_to_pc_py) StdoutLine: {'line': b'byte-compiling /home/orangepi/microros2pc_test/install/microros_to_pc_py/lib/python3.8/site-packages/microros_to_pc_py/__init__.py to __init__.cpython-38.pyc\n'}
+[1.827649] (microros_to_pc_py) StdoutLine: {'line': b'byte-compiling /home/orangepi/microros2pc_test/install/microros_to_pc_py/lib/python3.8/site-packages/microros_to_pc_py/microros_to_pc_sub.py to microros_to_pc_sub.cpython-38.pyc\n'}
+[1.828425] (microros_to_pc_py) StdoutLine: {'line': b'running install_data\n'}
+[1.828814] (microros_to_pc_py) StdoutLine: {'line': b'creating /home/orangepi/microros2pc_test/install/microros_to_pc_py/share/ament_index\n'}
+[1.829189] (microros_to_pc_py) StdoutLine: {'line': b'creating /home/orangepi/microros2pc_test/install/microros_to_pc_py/share/ament_index/resource_index\n'}
+[1.829559] (microros_to_pc_py) StdoutLine: {'line': b'creating /home/orangepi/microros2pc_test/install/microros_to_pc_py/share/ament_index/resource_index/packages\n'}
+[1.829929] (microros_to_pc_py) StdoutLine: {'line': b'copying resource/microros_to_pc_py -> /home/orangepi/microros2pc_test/install/microros_to_pc_py/share/ament_index/resource_index/packages\n'}
+[1.830299] (microros_to_pc_py) StdoutLine: {'line': b'copying package.xml -> /home/orangepi/microros2pc_test/install/microros_to_pc_py/share/microros_to_pc_py\n'}
+[1.830768] (microros_to_pc_py) StdoutLine: {'line': b'running install_egg_info\n'}
+[1.831135] (microros_to_pc_py) StdoutLine: {'line': b'Copying ../../build/microros_to_pc_py/microros_to_pc_py.egg-info to /home/orangepi/microros2pc_test/install/microros_to_pc_py/lib/python3.8/site-packages/microros_to_pc_py-0.0.0-py3.8.egg-info\n'}
+[1.831690] (microros_to_pc_py) StdoutLine: {'line': b'running install_scripts\n'}
+[1.854968] (microros_to_pc_py) StdoutLine: {'line': b'Installing microros_sub script to /home/orangepi/microros2pc_test/install/microros_to_pc_py/lib/microros_to_pc_py\n'}
+[1.855872] (microros_to_pc_py) StdoutLine: {'line': b"writing list of installed files to '/home/orangepi/microros2pc_test/build/microros_to_pc_py/install.log'\n"}
+[1.910642] (microros_to_pc_py) CommandEnded: {'returncode': 0}
+[1.915045] (-) TimerEvent: {}
+[2.016081] (-) TimerEvent: {}
+[2.108671] (microros_to_pc_py) JobEnded: {'identifier': 'microros_to_pc_py', 'rc': 0}
+[2.110326] (-) EventReactorShutdown: {}

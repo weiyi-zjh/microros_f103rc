@@ -1,0 +1,76 @@
+[0.156s] Invoking command in '/home/orangepi/microros2pc_test/build/microros2pc_test_cpp': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/orangepi/microros2pc_test/src/microros2pc_test_cpp -DCMAKE_INSTALL_PREFIX=/home/orangepi/microros2pc_test/install/microros2pc_test_cpp
+[0.546s] -- The C compiler identification is GNU 9.4.0
+[0.806s] -- The CXX compiler identification is GNU 9.4.0
+[0.828s] -- Check for working C compiler: /usr/bin/cc
+[1.097s] -- Check for working C compiler: /usr/bin/cc -- works
+[1.102s] -- Detecting C compiler ABI info
+[1.324s] -- Detecting C compiler ABI info - done
+[1.341s] -- Detecting C compile features
+[1.341s] -- Detecting C compile features - done
+[1.347s] -- Check for working CXX compiler: /usr/bin/c++
+[1.604s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[1.604s] -- Detecting CXX compiler ABI info
+[1.904s] -- Detecting CXX compiler ABI info - done
+[1.921s] -- Detecting CXX compile features
+[1.922s] -- Detecting CXX compile features - done
+[1.935s] -- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)
+[2.002s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[2.002s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[2.361s] -- Found rclcpp: 2.4.3 (/opt/ros/foxy/share/rclcpp/cmake)
+[2.469s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.488s] -- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[2.788s] -- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+[2.869s] -- Found FastRTPS: /opt/ros/foxy/include  
+[3.032s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[3.147s] -- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[3.151s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[3.154s] -- Looking for pthread.h
+[3.407s] -- Looking for pthread.h - found
+[3.407s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[3.626s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+[3.627s] -- Looking for pthread_create in pthreads
+[3.841s] -- Looking for pthread_create in pthreads - not found
+[3.842s] -- Looking for pthread_create in pthread
+[4.073s] -- Looking for pthread_create in pthread - found
+[4.078s] -- Found Threads: TRUE  
+[4.383s] -- Found ament_lint_auto: 0.9.8 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[4.528s] -- Added test 'copyright' to check source files copyright and LICENSE
+[4.530s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[4.530s] -- Configured cppcheck include dirs: 
+[4.530s] -- Configured cppcheck exclude dirs and/or files: 
+[4.531s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[4.532s] -- Configured cpplint exclude dirs and/or files: 
+[4.533s] -- Added test 'lint_cmake' to check CMake code style
+[4.535s] -- Added test 'uncrustify' to check C / C++ code style
+[4.535s] -- Configured uncrustify additional arguments: 
+[4.536s] -- Added test 'xmllint' to check XML markup files
+[4.542s] -- Configuring done
+[4.551s] -- Generating done
+[4.553s] -- Build files have been written to: /home/orangepi/microros2pc_test/build/microros2pc_test_cpp
+[4.570s] Invoked command in '/home/orangepi/microros2pc_test/build/microros2pc_test_cpp' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/orangepi/microros2pc_test/src/microros2pc_test_cpp -DCMAKE_INSTALL_PREFIX=/home/orangepi/microros2pc_test/install/microros2pc_test_cpp
+[4.577s] Invoking command in '/home/orangepi/microros2pc_test/build/microros2pc_test_cpp': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/orangepi/microros2pc_test/build/microros2pc_test_cpp -- -j8 -l8
+[4.711s] [35m[1mScanning dependencies of target microros2pc_test[0m
+[4.810s] [ 50%] [32mBuilding CXX object CMakeFiles/microros2pc_test.dir/src/microros2pc_test.cpp.o[0m
+[7.329s] [100%] [32m[1mLinking CXX executable microros2pc_test[0m
+[7.609s] [100%] Built target microros2pc_test
+[7.664s] Invoked command in '/home/orangepi/microros2pc_test/build/microros2pc_test_cpp' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/orangepi/microros2pc_test/build/microros2pc_test_cpp -- -j8 -l8
+[7.776s] Invoking command in '/home/orangepi/microros2pc_test/build/microros2pc_test_cpp': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/orangepi/microros2pc_test/build/microros2pc_test_cpp
+[7.796s] -- Install configuration: ""
+[7.796s] -- Installing: /home/orangepi/microros2pc_test/install/microros2pc_test_cpp/share/ament_index/resource_index/package_run_dependencies/microros2pc_test_cpp
+[7.797s] -- Installing: /home/orangepi/microros2pc_test/install/microros2pc_test_cpp/share/ament_index/resource_index/parent_prefix_path/microros2pc_test_cpp
+[7.797s] -- Installing: /home/orangepi/microros2pc_test/install/microros2pc_test_cpp/share/microros2pc_test_cpp/environment/ament_prefix_path.sh
+[7.798s] -- Installing: /home/orangepi/microros2pc_test/install/microros2pc_test_cpp/share/microros2pc_test_cpp/environment/ament_prefix_path.dsv
+[7.798s] -- Installing: /home/orangepi/microros2pc_test/install/microros2pc_test_cpp/share/microros2pc_test_cpp/environment/path.sh
+[7.801s] -- Installing: /home/orangepi/microros2pc_test/install/microros2pc_test_cpp/share/microros2pc_test_cpp/environment/path.dsv
+[7.802s] -- Installing: /home/orangepi/microros2pc_test/install/microros2pc_test_cpp/share/microros2pc_test_cpp/local_setup.bash
+[7.802s] -- Installing: /home/orangepi/microros2pc_test/install/microros2pc_test_cpp/share/microros2pc_test_cpp/local_setup.sh
+[7.803s] -- Installing: /home/orangepi/microros2pc_test/install/microros2pc_test_cpp/share/microros2pc_test_cpp/local_setup.zsh
+[7.803s] -- Installing: /home/orangepi/microros2pc_test/install/microros2pc_test_cpp/share/microros2pc_test_cpp/local_setup.dsv
+[7.817s] -- Installing: /home/orangepi/microros2pc_test/install/microros2pc_test_cpp/share/microros2pc_test_cpp/package.dsv
+[7.818s] -- Installing: /home/orangepi/microros2pc_test/install/microros2pc_test_cpp/share/ament_index/resource_index/packages/microros2pc_test_cpp
+[7.818s] -- Installing: /home/orangepi/microros2pc_test/install/microros2pc_test_cpp/share/microros2pc_test_cpp/cmake/microros2pc_test_cppConfig.cmake
+[7.819s] -- Installing: /home/orangepi/microros2pc_test/install/microros2pc_test_cpp/share/microros2pc_test_cpp/cmake/microros2pc_test_cppConfig-version.cmake
+[7.819s] -- Installing: /home/orangepi/microros2pc_test/install/microros2pc_test_cpp/share/microros2pc_test_cpp/package.xml
+[7.819s] -- Installing: /home/orangepi/microros2pc_test/install/microros2pc_test_cpp/lib/microros2pc_test_cpp/microros2pc_test
+[7.820s] -- Set runtime path of "/home/orangepi/microros2pc_test/install/microros2pc_test_cpp/lib/microros2pc_test_cpp/microros2pc_test" to ""
+[7.826s] Invoked command in '/home/orangepi/microros2pc_test/build/microros2pc_test_cpp' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/orangepi/microros2pc_test/build/microros2pc_test_cpp

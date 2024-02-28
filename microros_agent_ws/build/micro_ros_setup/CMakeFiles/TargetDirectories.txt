@@ -1,0 +1,9 @@
+/home/orangepi/microros_agent_ws/build/micro_ros_setup/CMakeFiles/install/strip.dir
+/home/orangepi/microros_agent_ws/build/micro_ros_setup/CMakeFiles/install/local.dir
+/home/orangepi/microros_agent_ws/build/micro_ros_setup/CMakeFiles/edit_cache.dir
+/home/orangepi/microros_agent_ws/build/micro_ros_setup/CMakeFiles/test.dir
+/home/orangepi/microros_agent_ws/build/micro_ros_setup/CMakeFiles/install.dir
+/home/orangepi/microros_agent_ws/build/micro_ros_setup/CMakeFiles/list_install_components.dir
+/home/orangepi/microros_agent_ws/build/micro_ros_setup/CMakeFiles/rebuild_cache.dir
+/home/orangepi/microros_agent_ws/build/micro_ros_setup/CMakeFiles/micro_ros_setup_uninstall.dir
+/home/orangepi/microros_agent_ws/build/micro_ros_setup/CMakeFiles/uninstall.dir
